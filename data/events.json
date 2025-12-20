@@ -1,6 +1,64 @@
 {
   "version": "1.0",
-  "generatedAt": "2025-12-20T10:00:00Z",
-  "eventCount": 0,
-  "events": []
+  "generatedAt": "2025-12-20T10:35:10.913035+00:00",
+  "eventCount": 3,
+  "events": [
+    {
+      "title": "Community Celebration (C23 Graduation)",
+      "organizer": "Student Services",
+      "category": "ai",
+      "startTime": "2026-01-23T01:00:00.000Z",
+      "endTime": "2026-01-23T03:00:00.000Z",
+      "location": {
+        "name": "",
+        "address": "AI House",
+        "city": "Seattle"
+      },
+      "cost": {
+        "type": "free",
+        "amount": null
+      },
+      "sourceUrl": "https://lu.ma/hk5pdjs8",
+      "sourceId": "luma-aihouse",
+      "id": "55094177712b89d6"
+    },
+    {
+      "title": "The Aurora Gala",
+      "organizer": "MH Lines",
+      "category": "ai",
+      "startTime": "2026-01-24T02:30:00.000Z",
+      "endTime": "2026-01-24T07:30:00.000Z",
+      "location": {
+        "name": "",
+        "address": "Pier 70 Building",
+        "city": "Seattle"
+      },
+      "cost": {
+        "type": "free",
+        "amount": null
+      },
+      "sourceUrl": "https://lu.ma/67goifi4",
+      "sourceId": "luma-aihouse",
+      "id": "481057e4a901d84f"
+    },
+    {
+      "title": "Build Day #4: A developer hiring event",
+      "organizer": "AI2 Incubator",
+      "category": "hackathon",
+      "startTime": "2026-01-28T00:00:00.000Z",
+      "endTime": "2026-01-28T02:00:00.000Z",
+      "location": {
+        "name": "",
+        "address": "AI House",
+        "city": "Seattle"
+      },
+      "cost": {
+        "type": "free",
+        "amount": null
+      },
+      "sourceUrl": "https://lu.ma/1z8sj980",
+      "sourceId": "luma-aihouse",
+      "id": "afb467ee46bc728b"
+    }
+  ]
 }

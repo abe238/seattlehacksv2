@@ -2,4 +2,31 @@ BEGIN:VCALENDAR
 VERSION:2.0
 PRODID:-//SeattleHacks//seattlehacks.com//EN
 X-WR-CALNAME:SeattleHacks Events
+BEGIN:VEVENT
+SUMMARY:Community Celebration (C23 Graduation)
+DTSTART:20260123T010000Z
+DTEND:20260123T030000Z
+UID:55094177712b89d6@seattlehacks.com
+DESCRIPTION:Organizer: Student Services
+LOCATION:AI House
+URL:https://lu.ma/hk5pdjs8
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:The Aurora Gala
+DTSTART:20260124T023000Z
+DTEND:20260124T073000Z
+UID:481057e4a901d84f@seattlehacks.com
+DESCRIPTION:Organizer: MH Lines
+LOCATION:Pier 70 Building
+URL:https://lu.ma/67goifi4
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Build Day #4: A developer hiring event
+DTSTART:20260128T000000Z
+DTEND:20260128T020000Z
+UID:afb467ee46bc728b@seattlehacks.com
+DESCRIPTION:Organizer: AI2 Incubator
+LOCATION:AI House
+URL:https://lu.ma/1z8sj980
+END:VEVENT
 END:VCALENDAR
