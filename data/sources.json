@@ -305,9 +305,10 @@
       "name": "Dot Net Startup Group",
       "type": "generic",
       "url": "https://www.dotnetstartup.com/",
-      "enabled": true,
+      "enabled": false,
       "tags": ["dotnet", "startup"],
-      "priority": 41
+      "priority": 41,
+      "note": "Domain no longer resolves (Dec 2025)"
     },
     {
       "id": "generic-nwcpp",
@@ -332,9 +333,10 @@
       "name": "Seattle Software Craftsmanship Community",
       "type": "generic",
       "url": "https://www.seattlesoftwarecraftsmanship.org/",
-      "enabled": true,
+      "enabled": false,
       "tags": ["programming", "craftsmanship", "community"],
-      "priority": 44
+      "priority": 44,
+      "note": "Domain no longer resolves (Dec 2025)"
     },
     {
       "id": "eventbrite-geekwire",
