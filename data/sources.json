@@ -1,0 +1,87 @@
+{
+  "version": "1.0",
+  "lastUpdated": "2025-12-20",
+  "sources": [
+    {
+      "id": "luma-aihouse",
+      "name": "AI House (AI2 Incubator)",
+      "type": "luma",
+      "url": "https://lu.ma/aihouse?k=c",
+      "enabled": true,
+      "tags": ["ai", "startup", "hiring", "networking"],
+      "priority": 1
+    },
+    {
+      "id": "luma-belle",
+      "name": "B.E.L.L.E Community",
+      "type": "luma",
+      "url": "https://lu.ma/belle?k=c",
+      "enabled": true,
+      "tags": ["ai", "networking", "women-in-tech"],
+      "priority": 2
+    },
+    {
+      "id": "aitinkerers",
+      "name": "AI Tinkerers Seattle",
+      "type": "generic",
+      "url": "https://seattle.aitinkerers.org",
+      "enabled": true,
+      "tags": ["ai", "workshop", "demos"],
+      "priority": 3
+    },
+    {
+      "id": "meetup-seattlejs",
+      "name": "SeattleJS Hackers",
+      "type": "meetup",
+      "url": "https://www.meetup.com/seattlejshackers/events/",
+      "enabled": true,
+      "tags": ["javascript", "web", "programming"],
+      "priority": 4
+    },
+    {
+      "id": "meetup-puget-sound-python",
+      "name": "Puget Sound Python",
+      "type": "meetup",
+      "url": "https://www.meetup.com/puget-sound-python/events/",
+      "enabled": true,
+      "tags": ["python", "programming"],
+      "priority": 5
+    },
+    {
+      "id": "meetup-seattle-rust",
+      "name": "Seattle Rust User Group",
+      "type": "meetup",
+      "url": "https://www.meetup.com/seattle-rust-user-group/events/",
+      "enabled": true,
+      "tags": ["rust", "programming", "systems"],
+      "priority": 6
+    },
+    {
+      "id": "meetup-seattle-go",
+      "name": "Seattle Go Programmers",
+      "type": "meetup",
+      "url": "https://www.meetup.com/golang/events/",
+      "enabled": true,
+      "tags": ["go", "programming"],
+      "priority": 7
+    },
+    {
+      "id": "eventbrite-geekwire",
+      "name": "GeekWire Events",
+      "type": "eventbrite",
+      "url": "https://www.eventbrite.com/o/geekwire-8181498695",
+      "enabled": true,
+      "tags": ["tech", "startup", "conference"],
+      "priority": 8
+    },
+    {
+      "id": "eventbrite-startup-seattle",
+      "name": "Startup Seattle",
+      "type": "eventbrite",
+      "url": "https://www.eventbrite.com/o/startup-seattle-7089047717",
+      "enabled": true,
+      "tags": ["startup", "networking", "entrepreneurship"],
+      "priority": 9
+    }
+  ]
+}

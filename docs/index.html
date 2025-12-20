@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en" class="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SeattleHacks - Seattle Tech Events</title>
+  <meta name="description" content="Discover Seattle's best tech events - hackathons, AI meetups, workshops, and networking events. Updated weekly.">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>💻</text></svg>">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: {
+        extend: {
+          colors: {
+            'sh-bg': '#0a0a0a',
+            'sh-card': '#141414',
+            'sh-border': '#262626',
+            'sh-text': '#e5e5e5',
+            'sh-muted': '#737373',
+            'sh-accent': '#22c55e',
+          }
+        }
+      }
+    }
+  </script>
+  <style>
+    .filter-btn.active { background-color: #22c55e; color: #0a0a0a; }
+    .event-card:hover { border-color: #22c55e; }
+  </style>
+</head>
+<body class="bg-sh-bg text-sh-text min-h-screen">
+  <header class="border-b border-sh-border">
+    <div class="max-w-6xl mx-auto px-4 py-6 flex justify-between items-center">
+      <h1 class="text-2xl font-bold">
+        <span class="text-sh-accent">&lt;</span>SeattleHacks<span class="text-sh-accent">/&gt;</span>
+      </h1>
+      <nav class="flex gap-4 text-sm">
+        <a href="https://github.com/abe238/seattlehacksv2" class="text-sh-muted hover:text-sh-accent" target="_blank">GitHub</a>
+        <a href="../data/events.json" class="text-sh-muted hover:text-sh-accent">JSON API</a>
+        <a href="../data/events.ics" class="text-sh-accent hover:underline">📅 Subscribe</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="max-w-6xl mx-auto px-4 py-8">
+    <div class="mb-8">
+      <p class="text-sh-muted mb-4">Seattle's tech events, updated weekly. Filter by category or subscribe to the calendar.</p>
+
+      <div id="filters" class="flex flex-wrap gap-2">
+        <button class="filter-btn active px-4 py-2 rounded-full border border-sh-border text-sm transition-colors" data-filter="all">All Events</button>
+        <button class="filter-btn px-4 py-2 rounded-full border border-sh-border text-sm transition-colors hover:border-sh-accent" data-filter="hackathon">Hackathons</button>
+        <button class="filter-btn px-4 py-2 rounded-full border border-sh-border text-sm transition-colors hover:border-sh-accent" data-filter="ai">AI/ML</button>
+        <button class="filter-btn px-4 py-2 rounded-full border border-sh-border text-sm transition-colors hover:border-sh-accent" data-filter="workshop">Workshops</button>
+        <button class="filter-btn px-4 py-2 rounded-full border border-sh-border text-sm transition-colors hover:border-sh-accent" data-filter="networking">Networking</button>
+        <button class="filter-btn px-4 py-2 rounded-full border border-sh-border text-sm transition-colors hover:border-sh-accent" data-filter="free">Free Only</button>
+      </div>
+    </div>
+
+    <div id="events" class="grid gap-4 md:grid-cols-2 lg:grid-cols-3">
+      <div class="text-sh-muted text-center py-12 col-span-full">Loading events...</div>
+    </div>
+
+    <div id="no-events" class="hidden text-sh-muted text-center py-12">
+      No events match your filter. Try a different category.
+    </div>
+  </main>
+
+  <footer class="border-t border-sh-border mt-12">
+    <div class="max-w-6xl mx-auto px-4 py-6 text-center text-sh-muted text-sm">
+      <p>Data updated <span id="updated-at">weekly</span> from curated Seattle tech event sources.</p>
+      <p class="mt-2">
+        <a href="https://github.com/abe238/seattlehacksv2" class="hover:text-sh-accent">Contribute on GitHub</a>
+        &nbsp;|&nbsp;
+        <a href="../data/events.ics" class="hover:text-sh-accent">iCal Feed</a>
+      </p>
+    </div>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>
