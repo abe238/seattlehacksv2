@@ -337,9 +337,10 @@ class SeattleHacksScraper:
                     self.archive.append(event)
                     archive_ids.add(event_id)
             else:
-                # Future event - add to seen_ids so we don't duplicate
+                # Future event - preserve it AND add to seen_ids
                 if event_id:
                     self.seen_ids.add(event_id)
+                    self.events.append(event)
 
         # Scrape each enabled source
         for source in self.sources:
