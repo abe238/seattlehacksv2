@@ -49,9 +49,11 @@ class SeattleHacksScraper:
 
         config = CrawlerRunConfig(
             cache_mode=CacheMode.BYPASS,
-            js_code="window.scrollTo(0, document.body.scrollHeight);",
-            wait_for="networkidle",
-            page_timeout=30000,
+            js_code="""
+                window.scrollTo(0, document.body.scrollHeight);
+                await new Promise(r => setTimeout(r, 2000));
+            """,
+            page_timeout=60000,
         )
 
         try:
