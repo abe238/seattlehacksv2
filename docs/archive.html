@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en" class="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Event Archive - SeattleHacks</title>
+  <meta name="description" content="Browse past Seattle tech events - hackathons, AI meetups, workshops, and networking events.">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>&#128187;</text></svg>">
+
+  <!-- Preconnect to Tailwind CDN for faster loading -->
+  <link rel="preconnect" href="https://cdn.tailwindcss.com">
+
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    // Tailwind configuration - same as main site
+    tailwind.config = {
+      darkMode: 'class',
+      theme: {
+        extend: {
+          colors: {
+            'sh-bg': '#0a0a0a',
+            'sh-card': '#141414',
+            'sh-border': '#262626',
+            'sh-text': '#e5e5e5',
+            'sh-muted': '#737373',
+            'sh-accent': '#22c55e',
+          }
+        }
+      }
+    }
+  </script>
+  <style>
+    .event-card:hover { border-color: #22c55e; }
+  </style>
+</head>
+<body class="bg-sh-bg text-sh-text min-h-screen">
+  <!-- Header with navigation -->
+  <header class="border-b border-sh-border">
+    <div class="max-w-6xl mx-auto px-4 py-6 flex justify-between items-center">
+      <h1 class="text-2xl font-bold">
+        <a href="./" class="hover:text-sh-accent">
+          <span class="text-sh-accent">&lt;</span>SeattleHacks<span class="text-sh-accent">/&gt;</span>
+        </a>
+      </h1>
+      <nav class="flex gap-4 text-sm">
+        <a href="./" class="text-sh-accent hover:underline">Upcoming Events</a>
+        <a href="https://github.com/abe238/seattlehacksv2" class="text-sh-muted hover:text-sh-accent" target="_blank" rel="noopener">GitHub</a>
+        <a href="./data/events.json" class="text-sh-muted hover:text-sh-accent">JSON API</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="max-w-6xl mx-auto px-4 py-8">
+    <!-- Page header -->
+    <div class="mb-8">
+      <h2 class="text-xl font-semibold mb-2">Event Archive</h2>
+      <p class="text-sh-muted">Past Seattle tech events. Looking for upcoming events? <a href="./" class="text-sh-accent hover:underline">View current events</a>.</p>
+    </div>
+
+    <!-- Events grid -->
+    <div id="events" class="grid gap-4 md:grid-cols-2 lg:grid-cols-3">
+      <div class="text-sh-muted text-center py-12 col-span-full">Loading archived events...</div>
+    </div>
+
+    <!-- Empty state -->
+    <div id="no-events" class="hidden text-sh-muted text-center py-12">
+      <p>No archived events yet.</p>
+      <p class="mt-2">Check back after some events have passed.</p>
+    </div>
+  </main>
+
+  <footer class="border-t border-sh-border mt-12">
+    <div class="max-w-6xl mx-auto px-4 py-6 text-center text-sh-muted text-sm">
+      <p>Historical archive of Seattle tech events.</p>
+      <p class="mt-2">
+        <a href="./" class="hover:text-sh-accent">Current Events</a>
+        &nbsp;|&nbsp;
+        <a href="https://github.com/abe238/seattlehacksv2" class="hover:text-sh-accent">Contribute on GitHub</a>
+      </p>
+    </div>
+  </footer>
+
+  <!-- Inline script for archive page (no filters needed) -->
+  <script>
+    /**
+     * Archive page JavaScript
+     * Simplified version of app.js - just loads and displays archived events
+     */
+
+    const ARCHIVE_URL = './data/archive.json';
+
+    async function loadArchive() {
+      try {
+        const res = await fetch(ARCHIVE_URL);
+        if (!res.ok) throw new Error(`HTTP ${res.status}`);
+
+        const data = await res.json();
+        const events = data.events || [];
+
+        if (events.length === 0) {
+          document.getElementById('events').innerHTML = '';
+          document.getElementById('no-events').classList.remove('hidden');
+          return;
+        }
+
+        document.getElementById('events').innerHTML = events.map(createEventCard).join('');
+
+      } catch (err) {
+        console.error('Failed to load archive:', err);
+        document.getElementById('events').innerHTML = `
+          <div class="text-sh-muted text-center py-12 col-span-full">
+            <p>No archived events available yet.</p>
+          </div>
+        `;
+      }
+    }
+
+    function createEventCard(event) {
+      const startDate = event.startTime ? new Date(event.startTime) : null;
+      const dateStr = startDate ? startDate.toLocaleDateString('en-US', {
+        weekday: 'short', month: 'short', day: 'numeric', year: 'numeric'
+      }) : 'Date unknown';
+
+      const location = event.location?.name || event.location?.city || 'Seattle';
+
+      const categoryColors = {
+        hackathon: 'bg-purple-900/50 text-purple-300',
+        ai: 'bg-blue-900/50 text-blue-300',
+        workshop: 'bg-amber-900/50 text-amber-300',
+        networking: 'bg-green-900/50 text-green-300',
+        conference: 'bg-red-900/50 text-red-300',
+      };
+      const categoryClass = categoryColors[event.category] || 'bg-gray-800 text-gray-300';
+
+      return `
+        <article class="event-card bg-sh-card border border-sh-border rounded-lg p-4 transition-colors opacity-75">
+          <div class="flex justify-between items-start mb-2">
+            <span class="text-xs px-2 py-1 rounded ${categoryClass}">${event.category || 'event'}</span>
+            <span class="text-xs text-sh-muted">Past</span>
+          </div>
+          <h3 class="font-semibold mb-2 line-clamp-2">${escapeHtml(event.title)}</h3>
+          <div class="text-sh-muted text-sm space-y-1">
+            <p>&#128197; ${dateStr}</p>
+            <p>&#128205; ${escapeHtml(location)}</p>
+            <p class="text-xs text-sh-muted/70">by ${escapeHtml(event.organizer || 'Unknown')}</p>
+          </div>
+          <a href="${escapeHtml(event.sourceUrl)}" target="_blank" rel="noopener noreferrer"
+             class="inline-block mt-3 text-sh-muted text-sm hover:text-sh-accent">
+            View Details &rarr;
+          </a>
+        </article>
+      `;
+    }
+
+    function escapeHtml(str) {
+      if (!str) return '';
+      return str
+        .replace(/&/g, '&amp;')
+        .replace(/</g, '&lt;')
+        .replace(/>/g, '&gt;')
+        .replace(/"/g, '&quot;')
+        .replace(/'/g, '&#039;');
+    }
+
+    loadArchive();
+  </script>
+</body>
+</html>
