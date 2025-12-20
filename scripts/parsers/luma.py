@@ -1,4 +1,4 @@
-"""Lu.ma event parser - extracts events from Lu.ma calendar pages."""
+"""Lu.ma event parser - extracts events from Lu.ma calendar pages via __NEXT_DATA__."""
 
 import json
 import re
@@ -10,107 +10,66 @@ class LumaParser:
         events = []
         html = result.html or ""
 
-        json_ld_matches = re.findall(
-            r'<script[^>]*type="application/ld\+json"[^>]*>(.*?)</script>',
-            html,
-            re.DOTALL | re.IGNORECASE
-        )
-
-        for match in json_ld_matches:
-            try:
-                data = json.loads(match.strip())
-                if isinstance(data, list):
-                    for item in data:
-                        event = self._parse_event(item, source)
-                        if event:
-                            events.append(event)
-                elif isinstance(data, dict):
-                    if data.get("@type") == "Event":
-                        event = self._parse_event(data, source)
-                        if event:
-                            events.append(event)
-                    elif data.get("@type") == "ItemList":
-                        for item in data.get("itemListElement", []):
-                            if item.get("@type") == "Event":
-                                event = self._parse_event(item, source)
-                                if event:
-                                    events.append(event)
-            except json.JSONDecodeError:
-                continue
-
-        if not events:
-            events = self._parse_html_fallback(html, source)
-
-        return events
-
-    def _parse_event(self, data: dict, source: dict) -> dict | None:
-        if data.get("@type") != "Event":
-            return None
-
-        title = data.get("name", "")
-        if not title:
-            return None
-
-        location = data.get("location", {})
-        if isinstance(location, dict):
-            loc_data = {
-                "name": location.get("name", ""),
-                "address": "",
-                "city": "Seattle"
-            }
-            address = location.get("address", {})
-            if isinstance(address, dict):
-                street = address.get("streetAddress", "")
-                city = address.get("addressLocality", "Seattle")
-                state = address.get("addressRegion", "WA")
-                postal = address.get("postalCode", "")
-                loc_data["address"] = f"{street}, {city}, {state} {postal}".strip(", ")
-                loc_data["city"] = city
-            elif isinstance(address, str):
-                loc_data["address"] = address
-        else:
-            loc_data = {"name": str(location), "address": "", "city": "Seattle"}
-
-        offers = data.get("offers", {})
-        if isinstance(offers, list):
-            offers = offers[0] if offers else {}
-        price = offers.get("price", 0) if isinstance(offers, dict) else 0
-        cost_type = "free" if price == 0 or price == "0" else "paid"
-
-        return {
-            "title": title,
-            "organizer": data.get("organizer", {}).get("name", source.get("name", "")),
-            "category": self._categorize(title, source.get("tags", [])),
-            "startTime": data.get("startDate", ""),
-            "endTime": data.get("endDate", ""),
-            "location": loc_data,
-            "cost": {"type": cost_type, "amount": float(price) if cost_type == "paid" else None},
-            "sourceUrl": data.get("url", source.get("url", "")),
-            "sourceId": source.get("id", "")
-        }
-
-    def _parse_html_fallback(self, html: str, source: dict) -> list[dict]:
-        events = []
-        event_blocks = re.findall(
-            r'data-event-id="([^"]+)".*?class="[^"]*event-title[^"]*"[^>]*>([^<]+)',
+        next_data = re.search(
+            r'<script id="__NEXT_DATA__"[^>]*>(.*?)</script>',
             html,
             re.DOTALL
         )
 
-        for event_id, title in event_blocks:
-            events.append({
-                "title": title.strip(),
-                "organizer": source.get("name", ""),
-                "category": self._categorize(title, source.get("tags", [])),
-                "startTime": "",
-                "endTime": "",
-                "location": {"name": "", "address": "", "city": "Seattle"},
-                "cost": {"type": "free", "amount": None},
-                "sourceUrl": f"https://lu.ma/{event_id}",
-                "sourceId": source.get("id", "")
-            })
+        if next_data:
+            try:
+                data = json.loads(next_data.group(1))
+                initial_data = data.get("props", {}).get("pageProps", {}).get("initialData", {}).get("data", {})
+                featured_items = initial_data.get("featured_items", [])
+
+                for item in featured_items:
+                    event = self._parse_featured_item(item, source)
+                    if event:
+                        events.append(event)
+            except (json.JSONDecodeError, KeyError):
+                pass
 
         return events
+
+    def _parse_featured_item(self, item: dict, source: dict) -> dict | None:
+        event_data = item.get("event", {})
+        if not event_data:
+            return None
+
+        title = event_data.get("name", "")
+        if not title:
+            return None
+
+        geo_info = event_data.get("geo_address_info", {})
+        address_json = event_data.get("geo_address_json", {})
+
+        loc_data = {
+            "name": geo_info.get("place_name", ""),
+            "address": address_json.get("full_address", geo_info.get("address", "")),
+            "city": geo_info.get("city", "Seattle")
+        }
+
+        ticket_info = item.get("ticket_info", {})
+        price = ticket_info.get("price_cents", 0) or 0
+        cost_type = "free" if price == 0 else "paid"
+
+        event_url = event_data.get("url", "")
+        full_url = f"https://lu.ma/{event_url}" if event_url else source.get("url", "")
+
+        hosts = item.get("hosts", [])
+        organizer = hosts[0].get("name", source.get("name", "")) if hosts else source.get("name", "")
+
+        return {
+            "title": title,
+            "organizer": organizer,
+            "category": self._categorize(title, source.get("tags", [])),
+            "startTime": event_data.get("start_at", ""),
+            "endTime": event_data.get("end_at", ""),
+            "location": loc_data,
+            "cost": {"type": cost_type, "amount": price / 100 if cost_type == "paid" else None},
+            "sourceUrl": full_url,
+            "sourceId": source.get("id", "")
+        }
 
     def _categorize(self, title: str, tags: list) -> str:
         title_lower = title.lower()
