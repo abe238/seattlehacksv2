@@ -99,7 +99,10 @@ class SeattleHacksScraper:
 
     def _parse_time(self, time_str: str) -> datetime:
         try:
-            return datetime.fromisoformat(time_str.replace("Z", "+00:00"))
+            dt = datetime.fromisoformat(time_str.replace("Z", "+00:00"))
+            if dt.tzinfo is None:
+                dt = dt.replace(tzinfo=timezone.utc)
+            return dt
         except (ValueError, AttributeError):
             return datetime.min.replace(tzinfo=timezone.utc)
 

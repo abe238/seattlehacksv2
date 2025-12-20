@@ -1,8 +1,46 @@
 {
   "version": "1.0",
-  "generatedAt": "2025-12-20T10:38:42.899921+00:00",
-  "eventCount": 3,
+  "generatedAt": "2025-12-20T18:54:50.725363+00:00",
+  "eventCount": 8,
   "events": [
+    {
+      "title": "How Managers Become Great Leaders",
+      "organizer": "10times Seattle Tech",
+      "category": "conference",
+      "startTime": "2026-01-07",
+      "endTime": "2026-01-07",
+      "location": {
+        "name": "",
+        "address": "",
+        "city": "Seattle"
+      },
+      "cost": {
+        "type": "free",
+        "amount": null
+      },
+      "sourceUrl": "https://10times.com/great-communicator-seattle",
+      "sourceId": "tentimes-seattle-tech",
+      "id": "9c8474f846ccd0f6"
+    },
+    {
+      "title": "New Tech Seattle",
+      "organizer": "10times Seattle Tech",
+      "category": "conference",
+      "startTime": "2026-01-13",
+      "endTime": "2026-01-13",
+      "location": {
+        "name": "",
+        "address": "",
+        "city": "Seattle"
+      },
+      "cost": {
+        "type": "free",
+        "amount": null
+      },
+      "sourceUrl": "https://10times.com/new-tech-seattle",
+      "sourceId": "tentimes-seattle-tech",
+      "id": "f3575611e730e29b"
+    },
     {
       "title": "Community Celebration (C23 Graduation)",
       "organizer": "Student Services",
@@ -59,6 +97,63 @@
       "sourceUrl": "https://lu.ma/1z8sj980",
       "sourceId": "luma-aihouse",
       "id": "afb467ee46bc728b"
+    },
+    {
+      "title": "AEC Meetup",
+      "organizer": "10times Seattle Tech",
+      "category": "networking",
+      "startTime": "2026-02-01",
+      "endTime": "2026-02-01",
+      "location": {
+        "name": "",
+        "address": "",
+        "city": "Seattle"
+      },
+      "cost": {
+        "type": "free",
+        "amount": null
+      },
+      "sourceUrl": "https://10times.com/e1h2-r2fh-1h4p-h-aec-meetup",
+      "sourceId": "tentimes-seattle-tech",
+      "id": "d184280db1c92de1"
+    },
+    {
+      "title": "Seattle/Bellevue Official Cybersecurity Summit",
+      "organizer": "10times Seattle Tech",
+      "category": "conference",
+      "startTime": "2026-02-03",
+      "endTime": "2026-02-03",
+      "location": {
+        "name": "",
+        "address": "",
+        "city": "Seattle"
+      },
+      "cost": {
+        "type": "free",
+        "amount": null
+      },
+      "sourceUrl": "https://10times.com/e1d2-244z-fpfk-d",
+      "sourceId": "tentimes-seattle-tech",
+      "id": "8276499319b83834"
+    },
+    {
+      "title": "AUTM Annual Meeting",
+      "organizer": "10times Seattle Tech",
+      "category": "conference",
+      "startTime": "2026-02-08",
+      "endTime": "2026-02-11",
+      "location": {
+        "name": "",
+        "address": "",
+        "city": "Seattle"
+      },
+      "cost": {
+        "type": "free",
+        "amount": null
+      },
+      "sourceUrl": "https://10times.com/autm-annual-meeting-seattle",
+      "sourceId": "tentimes-seattle-tech",
+      "id": "a6a9bc415ce90293"
     }
   ]
 }
