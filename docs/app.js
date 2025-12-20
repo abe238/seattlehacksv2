@@ -1,4 +1,4 @@
-const EVENTS_URL = '../data/events.json';
+const EVENTS_URL = './data/events.json';
 
 let allEvents = [];
 let currentFilter = 'all';

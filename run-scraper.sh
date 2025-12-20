@@ -23,14 +23,14 @@ log "Running scraper..."
 python scripts/scrape.py 2>&1 | tee -a "$LOG_FILE"
 
 # Check if files changed
-if git diff --quiet data/events.json data/events.ics 2>/dev/null; then
+if git diff --quiet docs/data/events.json docs/data/events.ics 2>/dev/null; then
   log "No changes to event data. Skipping commit."
   exit 0
 fi
 
 # Stage and commit
 log "Changes detected. Committing..."
-git add data/events.json data/events.ics docs/
+git add docs/data/events.json docs/data/events.ics
 
 git commit -m "chore: update events $(date +%Y-%m-%d)
 

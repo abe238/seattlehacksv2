@@ -22,9 +22,10 @@ logging.basicConfig(
 logger = logging.getLogger(__name__)
 
 DATA_DIR = Path(__file__).parent.parent / "data"
+DOCS_DATA_DIR = Path(__file__).parent.parent / "docs" / "data"
 SOURCES_FILE = DATA_DIR / "sources.json"
-EVENTS_FILE = DATA_DIR / "events.json"
-ICAL_FILE = DATA_DIR / "events.ics"
+EVENTS_FILE = DOCS_DATA_DIR / "events.json"
+ICAL_FILE = DOCS_DATA_DIR / "events.ics"
 
 
 def generate_event_id(title: str, start_time: str, address: str) -> str:
@@ -119,6 +120,7 @@ class SeattleHacksScraper:
 
         logger.info(f"Total unique future events: {len(self.events)}")
 
+        DOCS_DATA_DIR.mkdir(parents=True, exist_ok=True)
         self.write_json()
         self.write_ical()
 
