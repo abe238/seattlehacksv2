@@ -61,7 +61,9 @@ class GenericParser:
         exclude_patterns = [
             "upcoming events", "past events", "featured events",
             "all events", "more events", "recent events",
-            "view all", "see all", "load more"
+            "view all", "see all", "load more",
+            "conferences", "social", "resources", "about",
+            "contact", "home", "news", "blog", "sponsors"
         ]
         if any(excl in title_lower for excl in exclude_patterns):
             return False

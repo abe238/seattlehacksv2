@@ -1,45 +1,6 @@
 {
   "version": "1.0",
-  "generatedAt": "2025-12-20T21:59:40.236577+00:00",
-  "eventCount": 2,
-  "events": [
-    {
-      "title": "Conferences",
-      "organizer": "Northwest C++ Users' Group",
-      "category": "cpp",
-      "startTime": "",
-      "endTime": "",
-      "location": {
-        "name": "",
-        "address": "",
-        "city": "Seattle"
-      },
-      "cost": {
-        "type": "free",
-        "amount": null
-      },
-      "sourceUrl": "https://nwcpp.org/",
-      "sourceId": "generic-nwcpp",
-      "id": "162b198d3c744ad5"
-    },
-    {
-      "title": "Social",
-      "organizer": "Northwest C++ Users' Group",
-      "category": "cpp",
-      "startTime": "",
-      "endTime": "",
-      "location": {
-        "name": "",
-        "address": "",
-        "city": "Seattle"
-      },
-      "cost": {
-        "type": "free",
-        "amount": null
-      },
-      "sourceUrl": "https://nwcpp.org/",
-      "sourceId": "generic-nwcpp",
-      "id": "3e860f41a5ea92c4"
-    }
-  ]
+  "generatedAt": "2025-12-20T22:00:00.000000+00:00",
+  "eventCount": 0,
+  "events": []
 }
