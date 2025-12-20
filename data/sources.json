@@ -34,36 +34,40 @@
       "name": "SeattleJS Hackers",
       "type": "meetup",
       "url": "https://www.meetup.com/seattlejshackers/events/",
-      "enabled": true,
+      "enabled": false,
       "tags": ["javascript", "web", "programming"],
-      "priority": 4
+      "priority": 4,
+      "note": "No upcoming events as of 2025-12"
     },
     {
       "id": "meetup-puget-sound-python",
       "name": "Puget Sound Python",
       "type": "meetup",
       "url": "https://www.meetup.com/puget-sound-python/events/",
-      "enabled": true,
+      "enabled": false,
       "tags": ["python", "programming"],
-      "priority": 5
+      "priority": 5,
+      "note": "No upcoming events as of 2025-12"
     },
     {
       "id": "meetup-seattle-rust",
       "name": "Seattle Rust User Group",
       "type": "meetup",
       "url": "https://www.meetup.com/seattle-rust-user-group/events/",
-      "enabled": true,
+      "enabled": false,
       "tags": ["rust", "programming", "systems"],
-      "priority": 6
+      "priority": 6,
+      "note": "No upcoming events as of 2025-12"
     },
     {
       "id": "meetup-seattle-go",
       "name": "Seattle Go Programmers",
       "type": "meetup",
       "url": "https://www.meetup.com/golang/events/",
-      "enabled": true,
+      "enabled": false,
       "tags": ["go", "programming"],
-      "priority": 7
+      "priority": 7,
+      "note": "No upcoming events as of 2025-12"
     },
     {
       "id": "eventbrite-geekwire",
