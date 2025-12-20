@@ -55,11 +55,21 @@ class GenericParser:
         if len(title) < 5 or len(title) > 150:
             return False
 
+        title_lower = title.lower()
+
+        # Exclude common section headers (not actual events)
+        exclude_patterns = [
+            "upcoming events", "past events", "featured events",
+            "all events", "more events", "recent events",
+            "view all", "see all", "load more"
+        ]
+        if any(excl in title_lower for excl in exclude_patterns):
+            return False
+
         event_keywords = [
             "meetup", "event", "workshop", "talk", "demo", "hackathon",
             "conference", "summit", "mixer", "social", "session"
         ]
-        title_lower = title.lower()
         return any(kw in title_lower for kw in event_keywords)
 
     def _create_event(self, title: str, url: str, source: dict) -> dict:

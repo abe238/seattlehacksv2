@@ -1,45 +1,6 @@
 {
   "version": "1.0",
-  "generatedAt": "2025-12-20T19:44:07.841138+00:00",
-  "eventCount": 2,
-  "events": [
-    {
-      "title": "Upcoming Events",
-      "organizer": "AI Tinkerers Seattle",
-      "category": "ai",
-      "startTime": "",
-      "endTime": "",
-      "location": {
-        "name": "",
-        "address": "",
-        "city": "Seattle"
-      },
-      "cost": {
-        "type": "free",
-        "amount": null
-      },
-      "sourceUrl": "https://seattle.aitinkerers.org",
-      "sourceId": "aitinkerers",
-      "id": "deac9e2ba7a80882"
-    },
-    {
-      "title": "Past Events",
-      "organizer": "AI Tinkerers Seattle",
-      "category": "ai",
-      "startTime": "",
-      "endTime": "",
-      "location": {
-        "name": "",
-        "address": "",
-        "city": "Seattle"
-      },
-      "cost": {
-        "type": "free",
-        "amount": null
-      },
-      "sourceUrl": "https://seattle.aitinkerers.org",
-      "sourceId": "aitinkerers",
-      "id": "8766a5e3d851da44"
-    }
-  ]
+  "generatedAt": "2025-12-20T20:00:00.000000+00:00",
+  "eventCount": 0,
+  "events": []
 }

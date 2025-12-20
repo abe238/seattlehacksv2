@@ -25,9 +25,10 @@
       "name": "AI Tinkerers Seattle",
       "type": "generic",
       "url": "https://seattle.aitinkerers.org",
-      "enabled": true,
+      "enabled": false,
       "tags": ["ai", "workshop", "demos"],
-      "priority": 3
+      "priority": 3,
+      "note": "Generic parser picks up section headers, not actual events. Needs custom parser."
     },
     {
       "id": "meetup-seattlejs",
