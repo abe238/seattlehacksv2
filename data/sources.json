@@ -32,43 +32,309 @@
     },
     {
       "id": "meetup-seattlejs",
+      "name": "Seattle JS",
+      "type": "meetup",
+      "url": "https://www.meetup.com/seattlejs/events/",
+      "enabled": true,
+      "tags": ["javascript", "web", "programming"],
+      "priority": 10
+    },
+    {
+      "id": "meetup-seattlejs-hackers",
       "name": "SeattleJS Hackers",
       "type": "meetup",
       "url": "https://www.meetup.com/seattlejshackers/events/",
-      "enabled": false,
+      "enabled": true,
       "tags": ["javascript", "web", "programming"],
-      "priority": 4,
-      "note": "No upcoming events as of 2025-12"
+      "priority": 11
+    },
+    {
+      "id": "meetup-mobile-dev",
+      "name": "Seattle Mobile Web Apps",
+      "type": "meetup",
+      "url": "https://www.meetup.com/MobileDevelopment/events/",
+      "enabled": true,
+      "tags": ["mobile", "web", "programming"],
+      "priority": 12
+    },
+    {
+      "id": "meetup-appy-hour",
+      "name": "Appy Hour",
+      "type": "meetup",
+      "url": "https://www.meetup.com/Appy-Hour/events/",
+      "enabled": true,
+      "tags": ["mobile", "networking"],
+      "priority": 13
+    },
+    {
+      "id": "meetup-angularjs-sea",
+      "name": "AngularJS Seattle",
+      "type": "meetup",
+      "url": "https://www.meetup.com/AngularJS-SEA/events/",
+      "enabled": true,
+      "tags": ["javascript", "angular", "web"],
+      "priority": 14
+    },
+    {
+      "id": "meetup-cloudtalk",
+      "name": "CloudTalk",
+      "type": "meetup",
+      "url": "https://www.meetup.com/CloudTalk/events/",
+      "enabled": true,
+      "tags": ["cloud", "devops", "infrastructure"],
+      "priority": 15
+    },
+    {
+      "id": "meetup-emberjs",
+      "name": "Ember.js Seattle",
+      "type": "meetup",
+      "url": "https://www.meetup.com/Ember-js-Seattle-Meetup/events/",
+      "enabled": true,
+      "tags": ["javascript", "ember", "web"],
+      "priority": 16
+    },
+    {
+      "id": "meetup-hackernews",
+      "name": "Hacker News Seattle",
+      "type": "meetup",
+      "url": "https://www.meetup.com/HackerNewsSeattleMeetup/events/",
+      "enabled": true,
+      "tags": ["startup", "networking", "tech"],
+      "priority": 17
+    },
+    {
+      "id": "meetup-northside-frontend",
+      "name": "North Side Front End Devs",
+      "type": "meetup",
+      "url": "https://www.meetup.com/North-Side-Front-End-Devs/events/",
+      "enabled": true,
+      "tags": ["frontend", "web", "programming"],
+      "priority": 18
+    },
+    {
+      "id": "meetup-the-ocho",
+      "name": "The Ocho",
+      "type": "meetup",
+      "url": "https://www.meetup.com/TheOcho/events/",
+      "enabled": true,
+      "tags": ["tech", "networking"],
+      "priority": 19
+    },
+    {
+      "id": "meetup-openstack",
+      "name": "OpenStack Seattle",
+      "type": "meetup",
+      "url": "https://www.meetup.com/OpenStack-Seattle/events/",
+      "enabled": true,
+      "tags": ["cloud", "infrastructure", "devops"],
+      "priority": 20
+    },
+    {
+      "id": "meetup-android",
+      "name": "Seattle Android Developers",
+      "type": "meetup",
+      "url": "https://www.meetup.com/Seattle-Android-Developers/events/",
+      "enabled": true,
+      "tags": ["android", "mobile", "programming"],
+      "priority": 21
+    },
+    {
+      "id": "meetup-backbone",
+      "name": "Seattle Backbone",
+      "type": "meetup",
+      "url": "https://www.meetup.com/seattle-backbone/events/",
+      "enabled": true,
+      "tags": ["javascript", "backbone", "web"],
+      "priority": 22
+    },
+    {
+      "id": "meetup-gdg",
+      "name": "Seattle Google Developer Group",
+      "type": "meetup",
+      "url": "https://www.meetup.com/seattle-gdg/events/",
+      "enabled": true,
+      "tags": ["google", "android", "cloud", "ai"],
+      "priority": 23
+    },
+    {
+      "id": "meetup-beers-webdev",
+      "name": "Seattle Grab Beers and Talk Webdev",
+      "type": "meetup",
+      "url": "https://www.meetup.com/Seattle-Grab-Beers-and-Talk-Web-Development/events/",
+      "enabled": true,
+      "tags": ["web", "networking"],
+      "priority": 24
+    },
+    {
+      "id": "meetup-ios-android-incubator",
+      "name": "Seattle iOS & Android Incubator",
+      "type": "meetup",
+      "url": "https://www.meetup.com/Seattle-iPhone-iPad-Android-SURF-Incubator/events/",
+      "enabled": true,
+      "tags": ["mobile", "ios", "android", "startup"],
+      "priority": 25
+    },
+    {
+      "id": "meetup-gamedevjs",
+      "name": "Seattle JavaScript Game Development",
+      "type": "meetup",
+      "url": "https://www.meetup.com/gamedevjs/events/",
+      "enabled": true,
+      "tags": ["javascript", "gamedev", "programming"],
+      "priority": 26
+    },
+    {
+      "id": "meetup-jsworkshop",
+      "name": "Seattle JavaScript Workshop",
+      "type": "meetup",
+      "url": "https://www.meetup.com/seajsws/events/",
+      "enabled": true,
+      "tags": ["javascript", "workshop", "programming"],
+      "priority": 27
+    },
+    {
+      "id": "meetup-nodejs",
+      "name": "Seattle Node.js",
+      "type": "meetup",
+      "url": "https://www.meetup.com/Seattle-Node-js/events/",
+      "enabled": true,
+      "tags": ["javascript", "nodejs", "backend"],
+      "priority": 28
+    },
+    {
+      "id": "meetup-seaphp",
+      "name": "Seattle PHP User Group",
+      "type": "meetup",
+      "url": "https://www.meetup.com/seaphp/events/",
+      "enabled": true,
+      "tags": ["php", "web", "programming"],
+      "priority": 29
+    },
+    {
+      "id": "meetup-seattle-py",
+      "name": "Seattle Py",
+      "type": "meetup",
+      "url": "https://www.meetup.com/Seattle-Py/events/",
+      "enabled": true,
+      "tags": ["python", "programming"],
+      "priority": 30
     },
     {
       "id": "meetup-puget-sound-python",
       "name": "Puget Sound Python",
       "type": "meetup",
       "url": "https://www.meetup.com/puget-sound-python/events/",
-      "enabled": false,
+      "enabled": true,
       "tags": ["python", "programming"],
-      "priority": 5,
-      "note": "No upcoming events as of 2025-12"
+      "priority": 31
+    },
+    {
+      "id": "meetup-ruby-rails",
+      "name": "Seattle Ruby on Rails Developers",
+      "type": "meetup",
+      "url": "https://www.meetup.com/The-Seattle-Ruby-on-Rails-Developers-Meetup-Group/events/",
+      "enabled": true,
+      "tags": ["ruby", "rails", "programming"],
+      "priority": 32
+    },
+    {
+      "id": "meetup-sass",
+      "name": "Seattle Sass & Compass",
+      "type": "meetup",
+      "url": "https://www.meetup.com/SASSlang/events/",
+      "enabled": true,
+      "tags": ["css", "sass", "frontend"],
+      "priority": 33
+    },
+    {
+      "id": "meetup-scalability",
+      "name": "Seattle Scalability (Hadoop/NoSQL)",
+      "type": "meetup",
+      "url": "https://www.meetup.com/Seattle-Hadoop-HBase-NoSQL-Meetup/events/",
+      "enabled": true,
+      "tags": ["data", "hadoop", "nosql", "infrastructure"],
+      "priority": 34
+    },
+    {
+      "id": "meetup-studentrnd",
+      "name": "StudentRND Meetups",
+      "type": "meetup",
+      "url": "https://www.meetup.com/StudentRND-Meetups/events/",
+      "enabled": true,
+      "tags": ["student", "education", "hackathon"],
+      "priority": 35
+    },
+    {
+      "id": "meetup-code-for-seattle",
+      "name": "Code for Seattle",
+      "type": "meetup",
+      "url": "https://www.meetup.com/Code-for-Seattle/events/",
+      "enabled": true,
+      "tags": ["civic", "opensource", "community"],
+      "priority": 36
     },
     {
       "id": "meetup-seattle-rust",
       "name": "Seattle Rust User Group",
       "type": "meetup",
       "url": "https://www.meetup.com/seattle-rust-user-group/events/",
-      "enabled": false,
+      "enabled": true,
       "tags": ["rust", "programming", "systems"],
-      "priority": 6,
-      "note": "No upcoming events as of 2025-12"
+      "priority": 37
     },
     {
       "id": "meetup-seattle-go",
       "name": "Seattle Go Programmers",
       "type": "meetup",
       "url": "https://www.meetup.com/golang/events/",
-      "enabled": false,
+      "enabled": true,
       "tags": ["go", "programming"],
-      "priority": 7,
-      "note": "No upcoming events as of 2025-12"
+      "priority": 38
+    },
+    {
+      "id": "generic-netda",
+      "name": ".NET Developers Association",
+      "type": "generic",
+      "url": "https://www.netda.net/",
+      "enabled": true,
+      "tags": ["dotnet", "csharp", "programming"],
+      "priority": 40
+    },
+    {
+      "id": "generic-dotnetstartup",
+      "name": "Dot Net Startup Group",
+      "type": "generic",
+      "url": "https://www.dotnetstartup.com/",
+      "enabled": true,
+      "tags": ["dotnet", "startup"],
+      "priority": 41
+    },
+    {
+      "id": "generic-nwcpp",
+      "name": "Northwest C++ Users' Group",
+      "type": "generic",
+      "url": "https://nwcpp.org/",
+      "enabled": true,
+      "tags": ["cpp", "programming", "systems"],
+      "priority": 42
+    },
+    {
+      "id": "generic-seajure",
+      "name": "Seattle Clojure (Seajure)",
+      "type": "generic",
+      "url": "https://seajure.github.io/",
+      "enabled": true,
+      "tags": ["clojure", "functional", "programming"],
+      "priority": 43
+    },
+    {
+      "id": "generic-software-craftsmanship",
+      "name": "Seattle Software Craftsmanship Community",
+      "type": "generic",
+      "url": "https://www.seattlesoftwarecraftsmanship.org/",
+      "enabled": true,
+      "tags": ["programming", "craftsmanship", "community"],
+      "priority": 44
     },
     {
       "id": "eventbrite-geekwire",
@@ -77,7 +343,7 @@
       "url": "https://www.eventbrite.com/o/geekwire-8181498695",
       "enabled": true,
       "tags": ["tech", "startup", "conference"],
-      "priority": 8
+      "priority": 50
     },
     {
       "id": "eventbrite-startup-seattle",
@@ -86,7 +352,7 @@
       "url": "https://www.eventbrite.com/o/startup-seattle-7089047717",
       "enabled": true,
       "tags": ["startup", "networking", "entrepreneurship"],
-      "priority": 9
+      "priority": 51
     },
     {
       "id": "tentimes-seattle-tech",
@@ -95,7 +361,7 @@
       "url": "https://10times.com/seattle-us/technology",
       "enabled": true,
       "tags": ["conference", "tech", "expo"],
-      "priority": 10
+      "priority": 60
     }
   ]
 }
