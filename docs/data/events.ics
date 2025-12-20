@@ -3,6 +3,22 @@ VERSION:2.0
 PRODID:-//SeattleHacks//seattlehacks.com//EN
 X-WR-CALNAME:SeattleHacks Events
 BEGIN:VEVENT
+SUMMARY:How Managers Become Great Leaders
+DTSTART:20260107T000000Z
+DTEND:20260107T000000Z
+UID:9c8474f846ccd0f6@seattlehacks.com
+DESCRIPTION:Organizer: 10times Seattle Tech
+URL:https://10times.com/great-communicator-seattle
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:New Tech Seattle
+DTSTART:20260113T000000Z
+DTEND:20260113T000000Z
+UID:f3575611e730e29b@seattlehacks.com
+DESCRIPTION:Organizer: 10times Seattle Tech
+URL:https://10times.com/new-tech-seattle
+END:VEVENT
+BEGIN:VEVENT
 SUMMARY:Community Celebration (C23 Graduation)
 DTSTART:20260123T010000Z
 DTEND:20260123T030000Z
@@ -28,5 +44,29 @@ UID:afb467ee46bc728b@seattlehacks.com
 DESCRIPTION:Organizer: AI2 Incubator
 LOCATION:AI House
 URL:https://lu.ma/1z8sj980
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:AEC Meetup
+DTSTART:20260201T000000Z
+DTEND:20260201T000000Z
+UID:d184280db1c92de1@seattlehacks.com
+DESCRIPTION:Organizer: 10times Seattle Tech
+URL:https://10times.com/e1h2-r2fh-1h4p-h-aec-meetup
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Seattle/Bellevue Official Cybersecurity Summit
+DTSTART:20260203T000000Z
+DTEND:20260203T000000Z
+UID:8276499319b83834@seattlehacks.com
+DESCRIPTION:Organizer: 10times Seattle Tech
+URL:https://10times.com/e1d2-244z-fpfk-d
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:AUTM Annual Meeting
+DTSTART:20260208T000000Z
+DTEND:20260211T000000Z
+UID:a6a9bc415ce90293@seattlehacks.com
+DESCRIPTION:Organizer: 10times Seattle Tech
+URL:https://10times.com/autm-annual-meeting-seattle
 END:VEVENT
 END:VCALENDAR
