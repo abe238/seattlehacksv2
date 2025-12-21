@@ -1,155 +1,158 @@
 {
-  "tasks": [
-    {
-      "id": "1",
-      "title": "Create CLAUDE.md with Project Architecture",
-      "description": "Create comprehensive CLAUDE.md documenting project architecture, event schema, data flow, and development commands",
-      "status": "done",
-      "priority": "high",
-      "dependencies": [],
-      "subtasks": [],
-      "updatedAt": "2025-12-20T10:08:17.628Z"
-    },
-    {
-      "id": "2",
-      "title": "Create data/sources.json Configuration",
-      "description": "Define curated event sources with Lu.ma calendars (aihouse, belle), Meetup groups, Eventbrite, and GeekWire. Include type, URL, tags, and enabled flag for each source.",
-      "status": "done",
-      "priority": "high",
-      "dependencies": [
-        "1"
-      ],
-      "subtasks": [],
-      "updatedAt": "2025-12-20T10:09:15.825Z"
-    },
-    {
-      "id": "3",
-      "title": "Create Base Crawl4AI Scraper",
-      "description": "Implement scripts/scrape.py with SeattleHacksScraper class. Load sources, iterate enabled sources, call type-specific parsers, generate event IDs via SHA256 hash, filter future events.",
-      "status": "done",
-      "priority": "high",
-      "dependencies": [
-        "2"
-      ],
-      "subtasks": [],
-      "updatedAt": "2025-12-20T10:10:42.960Z"
-    },
-    {
-      "id": "4",
-      "title": "Create Lu.ma Parser",
-      "description": "Implement scripts/parsers/luma.py to extract events from Lu.ma calendar pages. Parse JSON-LD structured data, extract title, startTime, endTime, location, cost, sourceUrl.",
-      "status": "done",
-      "priority": "high",
-      "dependencies": [
-        "3"
-      ],
-      "subtasks": [],
-      "updatedAt": "2025-12-20T10:10:45.389Z"
-    },
-    {
-      "id": "5",
-      "title": "Create Meetup Parser",
-      "description": "Implement scripts/parsers/meetup.py to extract events from Meetup group pages. Parse Schema.org structured data or API if available.",
-      "status": "done",
-      "priority": "medium",
-      "dependencies": [
-        "3"
-      ],
-      "subtasks": [],
-      "updatedAt": "2025-12-20T10:10:47.850Z"
-    },
-    {
-      "id": "6",
-      "title": "Create Eventbrite Parser",
-      "description": "Implement scripts/parsers/eventbrite.py to extract events from Eventbrite pages. Parse Schema.org structured data for event details.",
-      "status": "done",
-      "priority": "medium",
-      "dependencies": [
-        "3"
-      ],
-      "subtasks": [],
-      "updatedAt": "2025-12-20T10:10:50.326Z"
-    },
-    {
-      "id": "7",
-      "title": "Create Generic Parser",
-      "description": "Implement scripts/parsers/generic.py as fallback parser using CSS selectors and common patterns for sites without structured data.",
-      "status": "done",
-      "priority": "low",
-      "dependencies": [
-        "3"
-      ],
-      "subtasks": [],
-      "updatedAt": "2025-12-20T10:10:52.656Z"
-    },
-    {
-      "id": "8",
-      "title": "Implement JSON Output Generator",
-      "description": "Add events.json generation to scraper. Output includes version, generatedAt timestamp, eventCount, and sorted events array. Write to data/events.json.",
-      "status": "done",
-      "priority": "high",
-      "dependencies": [
-        "4"
-      ],
-      "subtasks": [],
-      "updatedAt": "2025-12-20T10:10:54.943Z"
-    },
-    {
-      "id": "9",
-      "title": "Implement iCal Output Generator",
-      "description": "Add events.ics generation using icalendar library. Create VCALENDAR with VEVENT components including uid, summary, dtstart, dtend, location, description, url. Write to data/events.ics.",
-      "status": "done",
-      "priority": "medium",
-      "dependencies": [
-        "8"
-      ],
-      "subtasks": [],
-      "updatedAt": "2025-12-20T10:10:57.629Z"
-    },
-    {
-      "id": "10",
-      "title": "Create Static Website Frontend",
-      "description": "Build docs/index.html with Tailwind CDN, dark theme, event filters (category, cost), responsive grid layout. Create docs/app.js to fetch events.json and render event cards.",
-      "status": "done",
-      "priority": "high",
-      "dependencies": [
-        "8"
-      ],
-      "subtasks": [],
-      "updatedAt": "2025-12-20T10:12:13.148Z"
-    },
-    {
-      "id": "11",
-      "title": "Create VPS Deployment Scripts",
-      "description": "Create setup.sh for one-time VPS setup (clone repo, create venv, install deps, run crawl4ai-setup). Create run-scraper.sh for cron execution with git diff check before commit.",
-      "status": "in-progress",
-      "priority": "high",
-      "dependencies": [
-        "9"
-      ],
-      "subtasks": [],
-      "updatedAt": "2025-12-20T10:12:15.530Z"
-    },
-    {
-      "id": "12",
-      "title": "Configure Cron and Initial Data Population",
-      "description": "Set up cron job on VPS for Sunday 10pm PST execution. Run initial scrape to populate data. Verify GitHub Pages deployment.",
-      "status": "pending",
-      "priority": "high",
-      "dependencies": [
-        "10",
-        "11"
-      ],
-      "subtasks": []
+  "master": {
+    "tasks": [
+      {
+        "id": 1,
+        "title": "Create CLAUDE.md with Project Architecture",
+        "description": "Create comprehensive CLAUDE.md documenting project architecture, event schema, data flow, and development commands",
+        "status": "done",
+        "priority": "high",
+        "dependencies": [],
+        "subtasks": [],
+        "updatedAt": "2025-12-20T10:08:17.628Z"
+      },
+      {
+        "id": 2,
+        "title": "Create data/sources.json Configuration",
+        "description": "Define curated event sources with Lu.ma calendars (aihouse, belle), Meetup groups, Eventbrite, and GeekWire. Include type, URL, tags, and enabled flag for each source.",
+        "status": "done",
+        "priority": "high",
+        "dependencies": [
+          "1"
+        ],
+        "subtasks": [],
+        "updatedAt": "2025-12-20T10:09:15.825Z"
+      },
+      {
+        "id": 3,
+        "title": "Create Base Crawl4AI Scraper",
+        "description": "Implement scripts/scrape.py with SeattleHacksScraper class. Load sources, iterate enabled sources, call type-specific parsers, generate event IDs via SHA256 hash, filter future events.",
+        "status": "done",
+        "priority": "high",
+        "dependencies": [
+          "2"
+        ],
+        "subtasks": [],
+        "updatedAt": "2025-12-20T10:10:42.960Z"
+      },
+      {
+        "id": 4,
+        "title": "Create Lu.ma Parser",
+        "description": "Implement scripts/parsers/luma.py to extract events from Lu.ma calendar pages. Parse JSON-LD structured data, extract title, startTime, endTime, location, cost, sourceUrl.",
+        "status": "done",
+        "priority": "high",
+        "dependencies": [
+          "3"
+        ],
+        "subtasks": [],
+        "updatedAt": "2025-12-20T10:10:45.389Z"
+      },
+      {
+        "id": 5,
+        "title": "Create Meetup Parser",
+        "description": "Implement scripts/parsers/meetup.py to extract events from Meetup group pages. Parse Schema.org structured data or API if available.",
+        "status": "done",
+        "priority": "medium",
+        "dependencies": [
+          "3"
+        ],
+        "subtasks": [],
+        "updatedAt": "2025-12-20T10:10:47.850Z"
+      },
+      {
+        "id": 6,
+        "title": "Create Eventbrite Parser",
+        "description": "Implement scripts/parsers/eventbrite.py to extract events from Eventbrite pages. Parse Schema.org structured data for event details.",
+        "status": "done",
+        "priority": "medium",
+        "dependencies": [
+          "3"
+        ],
+        "subtasks": [],
+        "updatedAt": "2025-12-20T10:10:50.326Z"
+      },
+      {
+        "id": 7,
+        "title": "Create Generic Parser",
+        "description": "Implement scripts/parsers/generic.py as fallback parser using CSS selectors and common patterns for sites without structured data.",
+        "status": "done",
+        "priority": "low",
+        "dependencies": [
+          "3"
+        ],
+        "subtasks": [],
+        "updatedAt": "2025-12-20T10:10:52.656Z"
+      },
+      {
+        "id": 8,
+        "title": "Implement JSON Output Generator",
+        "description": "Add events.json generation to scraper. Output includes version, generatedAt timestamp, eventCount, and sorted events array. Write to data/events.json.",
+        "status": "done",
+        "priority": "high",
+        "dependencies": [
+          "4"
+        ],
+        "subtasks": [],
+        "updatedAt": "2025-12-20T10:10:54.943Z"
+      },
+      {
+        "id": 9,
+        "title": "Implement iCal Output Generator",
+        "description": "Add events.ics generation using icalendar library. Create VCALENDAR with VEVENT components including uid, summary, dtstart, dtend, location, description, url. Write to data/events.ics.",
+        "status": "done",
+        "priority": "medium",
+        "dependencies": [
+          "8"
+        ],
+        "subtasks": [],
+        "updatedAt": "2025-12-20T10:10:57.629Z"
+      },
+      {
+        "id": 10,
+        "title": "Create Static Website Frontend",
+        "description": "Build docs/index.html with Tailwind CDN, dark theme, event filters (category, cost), responsive grid layout. Create docs/app.js to fetch events.json and render event cards.",
+        "status": "done",
+        "priority": "high",
+        "dependencies": [
+          "8"
+        ],
+        "subtasks": [],
+        "updatedAt": "2025-12-20T10:12:13.148Z"
+      },
+      {
+        "id": 11,
+        "title": "Create VPS Deployment Scripts",
+        "description": "Create setup.sh for one-time VPS setup (clone repo, create venv, install deps, run crawl4ai-setup). Create run-scraper.sh for cron execution with git diff check before commit.",
+        "status": "done",
+        "priority": "high",
+        "dependencies": [
+          "9"
+        ],
+        "subtasks": [],
+        "updatedAt": "2025-12-20T10:12:58.699Z"
+      },
+      {
+        "id": 12,
+        "title": "Configure Cron and Initial Data Population",
+        "description": "Set up cron job on VPS for Sunday 10pm PST execution. Run initial scrape to populate data. Verify GitHub Pages deployment.",
+        "status": "done",
+        "priority": "high",
+        "dependencies": [
+          "10",
+          "11"
+        ],
+        "subtasks": [],
+        "updatedAt": "2025-12-20T10:13:19.933Z"
+      }
+    ],
+    "metadata": {
+      "version": "1.0.0",
+      "lastModified": "2025-12-20T10:13:19.933Z",
+      "taskCount": 12,
+      "completedCount": 12,
+      "tags": [
+        "master"
+      ]
     }
-  ],
-  "metadata": {
-    "version": "1.0.0",
-    "lastModified": "2025-12-20T10:12:15.530Z",
-    "taskCount": 12,
-    "completedCount": 10,
-    "tags": [
-      "master"
-    ]
   }
 }
