@@ -1,6 +1,767 @@
 {
   "version": "1.0",
-  "generatedAt": "2025-12-20T22:03:25.276694+00:00",
-  "eventCount": 0,
-  "events": []
+  "generatedAt": "2025-12-21T00:51:09.297162+00:00",
+  "eventCount": 40,
+  "events": [
+    {
+      "title": "SRS Meeting Info",
+      "organizer": "Seattle Robotics Society",
+      "category": "robotics",
+      "startTime": "",
+      "endTime": "",
+      "location": {
+        "name": "",
+        "address": "",
+        "city": "Seattle"
+      },
+      "cost": {
+        "type": "free",
+        "amount": null
+      },
+      "sourceUrl": "http://www.seattlerobotics.org/",
+      "sourceId": "generic-robotics",
+      "id": "e34836979b033230"
+    },
+    {
+      "title": "SRS Meetup Group",
+      "organizer": "Seattle Robotics Society",
+      "category": "robotics",
+      "startTime": "",
+      "endTime": "",
+      "location": {
+        "name": "",
+        "address": "",
+        "city": "Seattle"
+      },
+      "cost": {
+        "type": "free",
+        "amount": null
+      },
+      "sourceUrl": "http://www.seattlerobotics.org/",
+      "sourceId": "generic-robotics",
+      "id": "e7f8d2c0c4eee4fe"
+    },
+    {
+      "title": "Menu",
+      "organizer": "GeekWire Calendar",
+      "category": "tech",
+      "startTime": "",
+      "endTime": "",
+      "location": {
+        "name": "",
+        "address": "",
+        "city": "Seattle"
+      },
+      "cost": {
+        "type": "free",
+        "amount": null
+      },
+      "sourceUrl": "https://www.geekwire.com/calendar/",
+      "sourceId": "generic-geekwire-calendar",
+      "id": "398991009da1d251"
+    },
+    {
+      "title": "CoMotion",
+      "organizer": "GeekWire Calendar",
+      "category": "tech",
+      "startTime": "",
+      "endTime": "",
+      "location": {
+        "name": "",
+        "address": "",
+        "city": "Seattle"
+      },
+      "cost": {
+        "type": "free",
+        "amount": null
+      },
+      "sourceUrl": "https://www.geekwire.com/calendar/",
+      "sourceId": "generic-geekwire-calendar",
+      "id": "6b2114076e76caf1"
+    },
+    {
+      "title": "Pier 70 Building",
+      "organizer": "GeekWire Calendar",
+      "category": "tech",
+      "startTime": "",
+      "endTime": "",
+      "location": {
+        "name": "",
+        "address": "",
+        "city": "Seattle"
+      },
+      "cost": {
+        "type": "free",
+        "amount": null
+      },
+      "sourceUrl": "https://www.geekwire.com/calendar/",
+      "sourceId": "generic-geekwire-calendar",
+      "id": "6fbd57638f7c037d"
+    },
+    {
+      "title": "Today",
+      "organizer": "GeekWire Calendar",
+      "category": "tech",
+      "startTime": "",
+      "endTime": "",
+      "location": {
+        "name": "",
+        "address": "",
+        "city": "Seattle"
+      },
+      "cost": {
+        "type": "free",
+        "amount": null
+      },
+      "sourceUrl": "https://www.geekwire.com/calendar/list/?hide_subsequent_recurrences=1",
+      "sourceId": "generic-geekwire-calendar",
+      "id": "e0f4f767ac88a930"
+    },
+    {
+      "title": "[ Weekend Meditation Workshop ](https://everout.com/seattle/events/weekend-meditation-workshop/e189990/)",
+      "organizer": "EverOut Seattle Tech Events",
+      "category": "workshop",
+      "startTime": "",
+      "endTime": "",
+      "location": {
+        "name": "",
+        "address": "",
+        "city": "Seattle"
+      },
+      "cost": {
+        "type": "free",
+        "amount": null
+      },
+      "sourceUrl": "https://everout.com/seattle/events/",
+      "sourceId": "generic-everout",
+      "id": "3e9cb400327d654a"
+    },
+    {
+      "title": "[ The MiG-21 Project ](https://everout.com/seattle/events/the-mig-21-project/e210222/)",
+      "organizer": "EverOut Seattle Tech Events",
+      "category": "tech",
+      "startTime": "",
+      "endTime": "",
+      "location": {
+        "name": "",
+        "address": "",
+        "city": "Seattle"
+      },
+      "cost": {
+        "type": "free",
+        "amount": null
+      },
+      "sourceUrl": "https://everout.com/seattle/events/",
+      "sourceId": "generic-everout",
+      "id": "e26ab497ab36f329"
+    },
+    {
+      "title": "[ American Art: The Stories We Carry ](https://everout.com/seattle/events/american-art-the-stories-we-carry/e126761/)",
+      "organizer": "EverOut Seattle Tech Events",
+      "category": "tech",
+      "startTime": "",
+      "endTime": "",
+      "location": {
+        "name": "",
+        "address": "",
+        "city": "Seattle"
+      },
+      "cost": {
+        "type": "free",
+        "amount": null
+      },
+      "sourceUrl": "https://everout.com/seattle/events/",
+      "sourceId": "generic-everout",
+      "id": "71424f7f024e0c8e"
+    },
+    {
+      "title": "[ A Room for Animal Intelligence ](https://everout.com/seattle/events/a-room-for-animal-intelligence/e225181/)",
+      "organizer": "EverOut Seattle Tech Events",
+      "category": "tech",
+      "startTime": "",
+      "endTime": "",
+      "location": {
+        "name": "",
+        "address": "",
+        "city": "Seattle"
+      },
+      "cost": {
+        "type": "free",
+        "amount": null
+      },
+      "sourceUrl": "https://everout.com/seattle/events/",
+      "sourceId": "generic-everout",
+      "id": "b7f7f4b1786eb023"
+    },
+    {
+      "title": "[ Anila Quayyum Agha: Geometry of Light ](https://everout.com/seattle/events/anila-quayyum-agha-geometry-of-light/e214749/)",
+      "organizer": "EverOut Seattle Tech Events",
+      "category": "tech",
+      "startTime": "",
+      "endTime": "",
+      "location": {
+        "name": "",
+        "address": "",
+        "city": "Seattle"
+      },
+      "cost": {
+        "type": "free",
+        "amount": null
+      },
+      "sourceUrl": "https://everout.com/seattle/events/",
+      "sourceId": "generic-everout",
+      "id": "1ae2594ffbb3eb33"
+    },
+    {
+      "title": "[ Monir & Mehdi Ghanbeigy: Persian Garden ](https://everout.com/seattle/events/monir-mehdi-ghanbeigy-persian-garden/e223718/)",
+      "organizer": "EverOut Seattle Tech Events",
+      "category": "tech",
+      "startTime": "",
+      "endTime": "",
+      "location": {
+        "name": "",
+        "address": "",
+        "city": "Seattle"
+      },
+      "cost": {
+        "type": "free",
+        "amount": null
+      },
+      "sourceUrl": "https://everout.com/seattle/events/",
+      "sourceId": "generic-everout",
+      "id": "26d496888fc60c65"
+    },
+    {
+      "title": "[ Massive: The Power of Pop Culture ](https://everout.com/seattle/events/massive-the-power-of-pop-culture/e170525/)",
+      "organizer": "EverOut Seattle Tech Events",
+      "category": "tech",
+      "startTime": "",
+      "endTime": "",
+      "location": {
+        "name": "",
+        "address": "",
+        "city": "Seattle"
+      },
+      "cost": {
+        "type": "free",
+        "amount": null
+      },
+      "sourceUrl": "https://everout.com/seattle/events/",
+      "sourceId": "generic-everout",
+      "id": "dafef8e20966bf54"
+    },
+    {
+      "title": "[ Riding Together: 135 Years of Cycling in Seattle ](https://everout.com/seattle/events/riding-together-135-years-of-cycling-in-seattle/e225178/)",
+      "organizer": "EverOut Seattle Tech Events",
+      "category": "tech",
+      "startTime": "",
+      "endTime": "",
+      "location": {
+        "name": "",
+        "address": "",
+        "city": "Seattle"
+      },
+      "cost": {
+        "type": "free",
+        "amount": null
+      },
+      "sourceUrl": "https://everout.com/seattle/events/",
+      "sourceId": "generic-everout",
+      "id": "858629f03b627a28"
+    },
+    {
+      "title": "[ Be Water, My Friend: The Teachings of Bruce Lee ](https://everout.com/seattle/events/be-water-my-friend-the-teachings-of-bruce-lee/e122507/)",
+      "organizer": "EverOut Seattle Tech Events",
+      "category": "tech",
+      "startTime": "",
+      "endTime": "",
+      "location": {
+        "name": "",
+        "address": "",
+        "city": "Seattle"
+      },
+      "cost": {
+        "type": "free",
+        "amount": null
+      },
+      "sourceUrl": "https://everout.com/seattle/events/",
+      "sourceId": "generic-everout",
+      "id": "ff9e83215736e153"
+    },
+    {
+      "title": "[ Storytellers: Group Exhibit ](https://everout.com/seattle/events/storytellers-group-exhibit/e223913/)",
+      "organizer": "EverOut Seattle Tech Events",
+      "category": "tech",
+      "startTime": "",
+      "endTime": "",
+      "location": {
+        "name": "",
+        "address": "",
+        "city": "Seattle"
+      },
+      "cost": {
+        "type": "free",
+        "amount": null
+      },
+      "sourceUrl": "https://everout.com/seattle/events/",
+      "sourceId": "generic-everout",
+      "id": "8bc0b99e2ef36cab"
+    },
+    {
+      "title": "Events Calendar",
+      "organizer": "WTIA Events & Experiences",
+      "category": "tech",
+      "startTime": "",
+      "endTime": "",
+      "location": {
+        "name": "",
+        "address": "",
+        "city": "Seattle"
+      },
+      "cost": {
+        "type": "free",
+        "amount": null
+      },
+      "sourceUrl": "https://www.washingtontechnology.org/events",
+      "sourceId": "generic-wtia",
+      "id": "36b081ac66177c7e"
+    },
+    {
+      "title": "Explore WTIA Events & Experiences",
+      "organizer": "WTIA Events & Experiences",
+      "category": "tech",
+      "startTime": "",
+      "endTime": "",
+      "location": {
+        "name": "",
+        "address": "",
+        "city": "Seattle"
+      },
+      "cost": {
+        "type": "free",
+        "amount": null
+      },
+      "sourceUrl": "https://www.washingtontechnology.org/events",
+      "sourceId": "generic-wtia",
+      "id": "e736d402244811d1"
+    },
+    {
+      "title": "[WTIA & Community Events](https://luma.com/wtia?k=c)",
+      "organizer": "WTIA Events & Experiences",
+      "category": "tech",
+      "startTime": "",
+      "endTime": "",
+      "location": {
+        "name": "",
+        "address": "",
+        "city": "Seattle"
+      },
+      "cost": {
+        "type": "free",
+        "amount": null
+      },
+      "sourceUrl": "https://www.washingtontechnology.org/events",
+      "sourceId": "generic-wtia",
+      "id": "e3734ea96e659bc1"
+    },
+    {
+      "title": "Events",
+      "organizer": "Seattle Tech Forum Events",
+      "category": "tech",
+      "startTime": "",
+      "endTime": "",
+      "location": {
+        "name": "",
+        "address": "",
+        "city": "Seattle"
+      },
+      "cost": {
+        "type": "free",
+        "amount": null
+      },
+      "sourceUrl": "https://www.seattletechforum.org/events",
+      "sourceId": "generic-seattle-tech-forum",
+      "id": "862417b9e7c3720b"
+    },
+    {
+      "title": "Planning an event?",
+      "organizer": "Seattle University Events",
+      "category": "university",
+      "startTime": "",
+      "endTime": "",
+      "location": {
+        "name": "",
+        "address": "",
+        "city": "Seattle"
+      },
+      "cost": {
+        "type": "free",
+        "amount": null
+      },
+      "sourceUrl": "https://events.seattleu.edu",
+      "sourceId": "generic-seattleu-events",
+      "id": "3991e51d6e70b7bb"
+    },
+    {
+      "title": "StartOut Events",
+      "organizer": "StartOut Seattle",
+      "category": "lgbtq",
+      "startTime": "",
+      "endTime": "",
+      "location": {
+        "name": "",
+        "address": "",
+        "city": "Seattle"
+      },
+      "cost": {
+        "type": "free",
+        "amount": null
+      },
+      "sourceUrl": "https://startout.org/events?city=seattle",
+      "sourceId": "generic-startout",
+      "id": "1d4d81c1d7998af9"
+    },
+    {
+      "title": "Signature Events",
+      "organizer": "StartOut Seattle",
+      "category": "lgbtq",
+      "startTime": "",
+      "endTime": "",
+      "location": {
+        "name": "",
+        "address": "",
+        "city": "Seattle"
+      },
+      "cost": {
+        "type": "free",
+        "amount": null
+      },
+      "sourceUrl": "https://startout.org/events?city=seattle",
+      "sourceId": "generic-startout",
+      "id": "64396799d98a378b"
+    },
+    {
+      "title": "[Demo Day](https://startout.org/event/demo-day/)",
+      "organizer": "StartOut Seattle",
+      "category": "workshop",
+      "startTime": "",
+      "endTime": "",
+      "location": {
+        "name": "",
+        "address": "",
+        "city": "Seattle"
+      },
+      "cost": {
+        "type": "free",
+        "amount": null
+      },
+      "sourceUrl": "https://startout.org/events?city=seattle",
+      "sourceId": "generic-startout",
+      "id": "70b9799e751548d0"
+    },
+    {
+      "title": "[StartOut Con](https://startout.org/event/startout-con/)",
+      "organizer": "StartOut Seattle",
+      "category": "lgbtq",
+      "startTime": "",
+      "endTime": "",
+      "location": {
+        "name": "",
+        "address": "",
+        "city": "Seattle"
+      },
+      "cost": {
+        "type": "free",
+        "amount": null
+      },
+      "sourceUrl": "https://startout.org/events?city=seattle",
+      "sourceId": "generic-startout",
+      "id": "d4826e842189ff9a"
+    },
+    {
+      "title": "[StartOut Awards](https://startout.org/event/startout-awards/)",
+      "organizer": "StartOut Seattle",
+      "category": "lgbtq",
+      "startTime": "",
+      "endTime": "",
+      "location": {
+        "name": "",
+        "address": "",
+        "city": "Seattle"
+      },
+      "cost": {
+        "type": "free",
+        "amount": null
+      },
+      "sourceUrl": "https://startout.org/events?city=seattle",
+      "sourceId": "generic-startout",
+      "id": "32f862b928dc7320"
+    },
+    {
+      "title": "Missed previous events?",
+      "organizer": "StartOut Seattle",
+      "category": "lgbtq",
+      "startTime": "",
+      "endTime": "",
+      "location": {
+        "name": "",
+        "address": "",
+        "city": "Seattle"
+      },
+      "cost": {
+        "type": "free",
+        "amount": null
+      },
+      "sourceUrl": "https://startout.org/events?city=seattle",
+      "sourceId": "generic-startout",
+      "id": "4e823bb21a2238cf"
+    },
+    {
+      "title": "Ada Developers Academy",
+      "organizer": "Ada Developers Academy Events",
+      "category": "education",
+      "startTime": "",
+      "endTime": "",
+      "location": {
+        "name": "",
+        "address": "",
+        "city": "Seattle"
+      },
+      "cost": {
+        "type": "free",
+        "amount": null
+      },
+      "sourceUrl": "https://adadevelopersacademy.org/events",
+      "sourceId": "generic-ada",
+      "id": "e62d767fb0835115"
+    },
+    {
+      "title": "Footer",
+      "organizer": "Ada Developers Academy Events",
+      "category": "education",
+      "startTime": "",
+      "endTime": "",
+      "location": {
+        "name": "",
+        "address": "",
+        "city": "Seattle"
+      },
+      "cost": {
+        "type": "free",
+        "amount": null
+      },
+      "sourceUrl": "https://adadevelopersacademy.org/events",
+      "sourceId": "generic-ada",
+      "id": "0301844ccd8e9ca7"
+    },
+    {
+      "title": "Host Your Event at SURF Incubator",
+      "organizer": "SURF Incubator Events",
+      "category": "startup",
+      "startTime": "",
+      "endTime": "",
+      "location": {
+        "name": "",
+        "address": "",
+        "city": "Seattle"
+      },
+      "cost": {
+        "type": "free",
+        "amount": null
+      },
+      "sourceUrl": "https://surfincubator.com/events",
+      "sourceId": "generic-surf-incubator",
+      "id": "3e413fec372b0d6b"
+    },
+    {
+      "title": "Upcoming Coding Events",
+      "organizer": "Galvanize Seattle Events",
+      "category": "education",
+      "startTime": "",
+      "endTime": "",
+      "location": {
+        "name": "",
+        "address": "",
+        "city": "Seattle"
+      },
+      "cost": {
+        "type": "free",
+        "amount": null
+      },
+      "sourceUrl": "https://www.galvanize.com/events?campus=seattle",
+      "sourceId": "generic-galvanize",
+      "id": "a77315189ad08fa2"
+    },
+    {
+      "title": "Choose an event to see dates",
+      "organizer": "Galvanize Seattle Events",
+      "category": "education",
+      "startTime": "",
+      "endTime": "",
+      "location": {
+        "name": "",
+        "address": "",
+        "city": "Seattle"
+      },
+      "cost": {
+        "type": "free",
+        "amount": null
+      },
+      "sourceUrl": "https://www.galvanize.com/events?campus=seattle",
+      "sourceId": "generic-galvanize",
+      "id": "2dff14cca2c773da"
+    },
+    {
+      "title": "Founder Institute Events",
+      "organizer": "Founder Institute Seattle Events",
+      "category": "startup",
+      "startTime": "",
+      "endTime": "",
+      "location": {
+        "name": "",
+        "address": "",
+        "city": "Seattle"
+      },
+      "cost": {
+        "type": "free",
+        "amount": null
+      },
+      "sourceUrl": "https://fi.co/events/seattle",
+      "sourceId": "generic-founder-institute",
+      "id": "5d67de60c3bbcf72"
+    },
+    {
+      "title": "EVENT",
+      "organizer": "Startup Weekend Seattle",
+      "category": "startup",
+      "startTime": "",
+      "endTime": "",
+      "location": {
+        "name": "",
+        "address": "",
+        "city": "Seattle"
+      },
+      "cost": {
+        "type": "free",
+        "amount": null
+      },
+      "sourceUrl": "https://communities.techstars.com/usa/seattle/startup-weekend",
+      "sourceId": "generic-startup-weekend",
+      "id": "b8e1f80bd70ae078"
+    },
+    {
+      "title": "Mar 6:\nLos Angeles",
+      "organizer": "DevOpsDays Seattle",
+      "category": "devops",
+      "startTime": "",
+      "endTime": "",
+      "location": {
+        "name": "",
+        "address": "",
+        "city": "Seattle"
+      },
+      "cost": {
+        "type": "free",
+        "amount": null
+      },
+      "sourceUrl": "/events/2026-los-angeles",
+      "sourceId": "generic-devopsdays",
+      "id": "69d6e777cf466464"
+    },
+    {
+      "title": "Apr 9 - 10:\nCiudad Autonoma de Buenos Aires",
+      "organizer": "DevOpsDays Seattle",
+      "category": "ai",
+      "startTime": "",
+      "endTime": "",
+      "location": {
+        "name": "",
+        "address": "",
+        "city": "Seattle"
+      },
+      "cost": {
+        "type": "free",
+        "amount": null
+      },
+      "sourceUrl": "/events/2026-ciudad-autonoma-de-buenos-aires",
+      "sourceId": "generic-devopsdays",
+      "id": "6f236ed9c7788896"
+    },
+    {
+      "title": "Apr 14 - 16:\nTokyo",
+      "organizer": "DevOpsDays Seattle",
+      "category": "devops",
+      "startTime": "",
+      "endTime": "",
+      "location": {
+        "name": "",
+        "address": "",
+        "city": "Seattle"
+      },
+      "cost": {
+        "type": "free",
+        "amount": null
+      },
+      "sourceUrl": "/events/2026-tokyo",
+      "sourceId": "generic-devopsdays",
+      "id": "46e50aa3b77f5869"
+    },
+    {
+      "title": "Apr 21 - 22:\nAtlanta",
+      "organizer": "DevOpsDays Seattle",
+      "category": "devops",
+      "startTime": "",
+      "endTime": "",
+      "location": {
+        "name": "",
+        "address": "",
+        "city": "Seattle"
+      },
+      "cost": {
+        "type": "free",
+        "amount": null
+      },
+      "sourceUrl": "/events/2026-atlanta",
+      "sourceId": "generic-devopsdays",
+      "id": "37f372fe75494eb7"
+    },
+    {
+      "title": "Apr 28 - 29:\ncopenhagen",
+      "organizer": "DevOpsDays Seattle",
+      "category": "devops",
+      "startTime": "",
+      "endTime": "",
+      "location": {
+        "name": "",
+        "address": "",
+        "city": "Seattle"
+      },
+      "cost": {
+        "type": "free",
+        "amount": null
+      },
+      "sourceUrl": "/events/2026-copenhagen",
+      "sourceId": "generic-devopsdays",
+      "id": "bfeee238921906a5"
+    },
+    {
+      "title": "Causal Inference in Business: Real-World Impact",
+      "organizer": "WiDS Seattle (Women in Data Science)",
+      "category": "data",
+      "startTime": "",
+      "endTime": "",
+      "location": {
+        "name": "",
+        "address": "",
+        "city": "Seattle"
+      },
+      "cost": {
+        "type": "free",
+        "amount": null
+      },
+      "sourceUrl": "https://www.widsconference.org/seattle",
+      "sourceId": "generic-wids",
+      "id": "92b532f0fe67948e"
+    }
+  ]
 }

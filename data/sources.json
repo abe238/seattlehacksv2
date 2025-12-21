@@ -748,9 +748,10 @@
       "name": "The Cloud Room Events",
       "type": "generic",
       "url": "https://www.thecloudroomseattle.com/events",
-      "enabled": true,
+      "enabled": false,
       "tags": ["coworking", "networking"],
-      "priority": 89
+      "priority": 89,
+      "note": "Domain no longer resolves (Dec 2025)"
     },
     {
       "id": "generic-galvanize",
@@ -820,9 +821,10 @@
       "name": "Seattle Startup Week",
       "type": "generic",
       "url": "https://techstarscommunityprograms.com/seattle-startup-week",
-      "enabled": true,
+      "enabled": false,
       "tags": ["startup", "conference", "networking"],
-      "priority": 97
+      "priority": 97,
+      "note": "Domain no longer resolves (Dec 2025)"
     },
     {
       "id": "generic-bsides",
