@@ -21,13 +21,67 @@
       "priority": 2
     },
     {
+      "id": "luma-seattle-tech-week",
+      "name": "Seattle Tech Week",
+      "type": "luma",
+      "url": "https://lu.ma/SeattleTechWeek",
+      "enabled": true,
+      "tags": ["tech", "startup", "networking"],
+      "priority": 3
+    },
+    {
+      "id": "luma-seattle-ai-week",
+      "name": "Seattle AI Week",
+      "type": "luma",
+      "url": "https://lu.ma/SeattleAIWeek",
+      "enabled": true,
+      "tags": ["ai", "tech", "networking"],
+      "priority": 4
+    },
+    {
+      "id": "luma-seattle-tech-forum",
+      "name": "Seattle Tech Forum",
+      "type": "luma",
+      "url": "https://lu.ma/seattletechforum",
+      "enabled": true,
+      "tags": ["tech", "networking"],
+      "priority": 5
+    },
+    {
+      "id": "luma-uw-comotion",
+      "name": "UW CoMotion",
+      "type": "luma",
+      "url": "https://luma.com/cmevents",
+      "enabled": true,
+      "tags": ["startup", "university", "innovation"],
+      "priority": 6
+    },
+    {
+      "id": "luma-seattle-startup-events",
+      "name": "Seattle Startup Events",
+      "type": "luma",
+      "url": "https://luma.com/SeattleStartupEvents",
+      "enabled": true,
+      "tags": ["startup", "networking"],
+      "priority": 7
+    },
+    {
+      "id": "luma-seattle-popular",
+      "name": "Luma Seattle Popular",
+      "type": "luma",
+      "url": "https://luma.com/seattle",
+      "enabled": true,
+      "tags": ["tech", "networking"],
+      "priority": 8
+    },
+    {
       "id": "aitinkerers",
       "name": "AI Tinkerers Seattle",
       "type": "generic",
       "url": "https://seattle.aitinkerers.org",
       "enabled": false,
       "tags": ["ai", "workshop", "demos"],
-      "priority": 3,
+      "priority": 9,
       "note": "Generic parser picks up section headers, not actual events. Needs custom parser."
     },
     {
@@ -292,13 +346,238 @@
       "priority": 38
     },
     {
+      "id": "meetup-ai-society",
+      "name": "Seattle AI Society",
+      "type": "meetup",
+      "url": "https://www.meetup.com/ai-society/",
+      "enabled": true,
+      "tags": ["ai", "ml", "tech"],
+      "priority": 39
+    },
+    {
+      "id": "meetup-data-ai-security",
+      "name": "Seattle Data, AI & Security",
+      "type": "meetup",
+      "url": "https://www.meetup.com/seattle-data-ai-security/",
+      "enabled": true,
+      "tags": ["ai", "data", "security"],
+      "priority": 40
+    },
+    {
+      "id": "meetup-ai-ml-seattle",
+      "name": "Seattle AI and ML Group",
+      "type": "meetup",
+      "url": "https://www.meetup.com/AIandMLSeattle/",
+      "enabled": true,
+      "tags": ["ai", "ml", "tech"],
+      "priority": 41
+    },
+    {
+      "id": "meetup-data-science",
+      "name": "Seattle Data Science Meetup",
+      "type": "meetup",
+      "url": "https://www.meetup.com/Seattle-Data-Science/",
+      "enabled": true,
+      "tags": ["data", "science", "ml"],
+      "priority": 42
+    },
+    {
+      "id": "meetup-data-analytics-ml",
+      "name": "Seattle Data/Analytics/Machine Learning",
+      "type": "meetup",
+      "url": "https://www.meetup.com/data-analytics-machine-learning/",
+      "enabled": true,
+      "tags": ["data", "analytics", "ml"],
+      "priority": 43
+    },
+    {
+      "id": "meetup-ai-developers",
+      "name": "Seattle AI Developers Group",
+      "type": "meetup",
+      "url": "https://www.meetup.com/seattle-ai-developers-group/",
+      "enabled": true,
+      "tags": ["ai", "programming"],
+      "priority": 44
+    },
+    {
+      "id": "meetup-global-ai",
+      "name": "Global AI Seattle",
+      "type": "meetup",
+      "url": "https://www.meetup.com/global-ai-seattle/",
+      "enabled": true,
+      "tags": ["ai", "ml", "tech"],
+      "priority": 45
+    },
+    {
+      "id": "meetup-building-ai",
+      "name": "Building AI Together Seattle",
+      "type": "meetup",
+      "url": "https://www.meetup.com/building-ai-together-seattle/",
+      "enabled": true,
+      "tags": ["ai", "programming"],
+      "priority": 46
+    },
+    {
+      "id": "meetup-opensource-ai",
+      "name": "Open Source AI Collective",
+      "type": "meetup",
+      "url": "https://www.meetup.com/open-source-ai-seattle/",
+      "enabled": true,
+      "tags": ["ai", "opensource"],
+      "priority": 47
+    },
+    {
+      "id": "meetup-spark-ai",
+      "name": "Seattle Spark+AI Meetup",
+      "type": "meetup",
+      "url": "https://www.meetup.com/seattle-spark-ai-meetup/",
+      "enabled": true,
+      "tags": ["ai", "spark", "data"],
+      "priority": 48
+    },
+    {
+      "id": "meetup-women-who-code",
+      "name": "Women Who Code Seattle",
+      "type": "meetup",
+      "url": "https://www.meetup.com/Women-Who-Code-Seattle/",
+      "enabled": true,
+      "tags": ["women-in-tech", "programming", "community"],
+      "priority": 49
+    },
+    {
+      "id": "meetup-pyladies",
+      "name": "PyLadies Seattle",
+      "type": "meetup",
+      "url": "https://www.meetup.com/PyLadies-Seattle/",
+      "enabled": true,
+      "tags": ["python", "women-in-tech"],
+      "priority": 50
+    },
+    {
+      "id": "meetup-devops",
+      "name": "Seattle DevOps Meetup",
+      "type": "meetup",
+      "url": "https://www.meetup.com/Seattle-DevOps/",
+      "enabled": true,
+      "tags": ["devops", "infrastructure"],
+      "priority": 51
+    },
+    {
+      "id": "meetup-kubernetes",
+      "name": "Seattle Kubernetes Meetup",
+      "type": "meetup",
+      "url": "https://www.meetup.com/Seattle-Kubernetes-Meetup/",
+      "enabled": true,
+      "tags": ["kubernetes", "devops", "cloud"],
+      "priority": 52
+    },
+    {
+      "id": "meetup-cloud-native",
+      "name": "Cloud Native Seattle",
+      "type": "meetup",
+      "url": "https://www.meetup.com/cloud-native-seattle/",
+      "enabled": true,
+      "tags": ["cloud", "devops", "kubernetes"],
+      "priority": 53
+    },
+    {
+      "id": "meetup-docker",
+      "name": "Docker Seattle Meetup",
+      "type": "meetup",
+      "url": "https://www.meetup.com/Docker-Seattle/",
+      "enabled": true,
+      "tags": ["docker", "devops", "containers"],
+      "priority": 54
+    },
+    {
+      "id": "meetup-aws-architects",
+      "name": "Seattle AWS Architects",
+      "type": "meetup",
+      "url": "https://www.meetup.com/Seattle-AWS-Architects-User-Group/",
+      "enabled": true,
+      "tags": ["aws", "cloud", "architecture"],
+      "priority": 55
+    },
+    {
+      "id": "meetup-gcp",
+      "name": "Seattle Google Cloud Platform",
+      "type": "meetup",
+      "url": "https://www.meetup.com/Seattle-GCP-Cloud/",
+      "enabled": true,
+      "tags": ["gcp", "cloud", "google"],
+      "priority": 56
+    },
+    {
+      "id": "meetup-vr-ar",
+      "name": "Seattle VR/AR Meetup",
+      "type": "meetup",
+      "url": "https://www.meetup.com/Seattle-VR-AR/",
+      "enabled": true,
+      "tags": ["vr", "ar", "xr"],
+      "priority": 57
+    },
+    {
+      "id": "meetup-hardware",
+      "name": "Seattle Hardware Meetup",
+      "type": "meetup",
+      "url": "https://www.meetup.com/Hardware-Seattle/",
+      "enabled": true,
+      "tags": ["hardware", "iot", "electronics"],
+      "priority": 58
+    },
+    {
+      "id": "meetup-iot",
+      "name": "Seattle Internet of Things (IoT) Meetup",
+      "type": "meetup",
+      "url": "https://www.meetup.com/Seattle-IoT/",
+      "enabled": true,
+      "tags": ["iot", "hardware", "embedded"],
+      "priority": 59
+    },
+    {
+      "id": "meetup-blockchain",
+      "name": "Seattle Blockchain Meetup",
+      "type": "meetup",
+      "url": "https://www.meetup.com/Seattle-Blockchain/",
+      "enabled": true,
+      "tags": ["blockchain", "crypto", "web3"],
+      "priority": 60
+    },
+    {
+      "id": "meetup-infosec",
+      "name": "Seattle Information Security Meetup",
+      "type": "meetup",
+      "url": "https://www.meetup.com/seattle-infosec/",
+      "enabled": true,
+      "tags": ["security", "infosec", "cybersecurity"],
+      "priority": 61
+    },
+    {
+      "id": "meetup-data-viz",
+      "name": "Seattle Data Visualization Meetup",
+      "type": "meetup",
+      "url": "https://www.meetup.com/Seattle-Data-Visualization/",
+      "enabled": true,
+      "tags": ["data", "visualization", "analytics"],
+      "priority": 62
+    },
+    {
+      "id": "meetup-graph-db",
+      "name": "Seattle Graph Database Meetup",
+      "type": "meetup",
+      "url": "https://www.meetup.com/Seattle-Graph-Database/",
+      "enabled": true,
+      "tags": ["database", "graph", "data"],
+      "priority": 63
+    },
+    {
       "id": "generic-netda",
       "name": ".NET Developers Association",
       "type": "generic",
       "url": "https://www.netda.net/",
       "enabled": true,
       "tags": ["dotnet", "csharp", "programming"],
-      "priority": 40
+      "priority": 70
     },
     {
       "id": "generic-dotnetstartup",
@@ -307,7 +586,7 @@
       "url": "https://www.dotnetstartup.com/",
       "enabled": false,
       "tags": ["dotnet", "startup"],
-      "priority": 41,
+      "priority": 71,
       "note": "Domain no longer resolves (Dec 2025)"
     },
     {
@@ -317,7 +596,7 @@
       "url": "https://nwcpp.org/",
       "enabled": true,
       "tags": ["cpp", "programming", "systems"],
-      "priority": 42
+      "priority": 72
     },
     {
       "id": "generic-seajure",
@@ -326,7 +605,7 @@
       "url": "https://seajure.github.io/",
       "enabled": true,
       "tags": ["clojure", "functional", "programming"],
-      "priority": 43
+      "priority": 73
     },
     {
       "id": "generic-software-craftsmanship",
@@ -335,8 +614,269 @@
       "url": "https://www.seattlesoftwarecraftsmanship.org/",
       "enabled": false,
       "tags": ["programming", "craftsmanship", "community"],
-      "priority": 44,
+      "priority": 74,
       "note": "Domain no longer resolves (Dec 2025)"
+    },
+    {
+      "id": "generic-robotics",
+      "name": "Seattle Robotics Society",
+      "type": "generic",
+      "url": "http://www.seattlerobotics.org/",
+      "enabled": true,
+      "tags": ["robotics", "hardware", "electronics"],
+      "priority": 75
+    },
+    {
+      "id": "generic-geekwire-calendar",
+      "name": "GeekWire Calendar",
+      "type": "generic",
+      "url": "https://www.geekwire.com/calendar/",
+      "enabled": true,
+      "tags": ["tech", "startup", "conference"],
+      "priority": 76
+    },
+    {
+      "id": "generic-everout",
+      "name": "EverOut Seattle Tech Events",
+      "type": "generic",
+      "url": "https://everout.com/seattle/events/",
+      "enabled": true,
+      "tags": ["tech", "events", "calendar"],
+      "priority": 77
+    },
+    {
+      "id": "generic-wtia",
+      "name": "WTIA Events & Experiences",
+      "type": "generic",
+      "url": "https://www.washingtontechnology.org/events",
+      "enabled": true,
+      "tags": ["tech", "industry", "networking"],
+      "priority": 78
+    },
+    {
+      "id": "generic-seattle-tech-forum",
+      "name": "Seattle Tech Forum Events",
+      "type": "generic",
+      "url": "https://www.seattletechforum.org/events",
+      "enabled": true,
+      "tags": ["tech", "networking"],
+      "priority": 79
+    },
+    {
+      "id": "generic-trumba-comotion",
+      "name": "UW CoMotion Trumba Calendar",
+      "type": "generic",
+      "url": "https://www.trumba.com/calendars/commotion",
+      "enabled": true,
+      "tags": ["university", "startup", "innovation"],
+      "priority": 80
+    },
+    {
+      "id": "generic-seattleu-events",
+      "name": "Seattle University Events",
+      "type": "generic",
+      "url": "https://events.seattleu.edu",
+      "enabled": true,
+      "tags": ["university", "startup", "entrepreneurship"],
+      "priority": 81
+    },
+    {
+      "id": "generic-startout",
+      "name": "StartOut Seattle",
+      "type": "generic",
+      "url": "https://startout.org/events?city=seattle",
+      "enabled": true,
+      "tags": ["lgbtq", "startup", "entrepreneurship"],
+      "priority": 82
+    },
+    {
+      "id": "generic-code-fellows",
+      "name": "Code Fellows Events",
+      "type": "generic",
+      "url": "https://www.codefellows.org/blog/tag/events/",
+      "enabled": true,
+      "tags": ["education", "bootcamp", "programming"],
+      "priority": 83
+    },
+    {
+      "id": "generic-ada",
+      "name": "Ada Developers Academy Events",
+      "type": "generic",
+      "url": "https://adadevelopersacademy.org/events",
+      "enabled": true,
+      "tags": ["education", "women-in-tech", "bootcamp"],
+      "priority": 84
+    },
+    {
+      "id": "generic-impact-hub",
+      "name": "Impact Hub Seattle Events",
+      "type": "generic",
+      "url": "https://impacthubseattle.com/events/",
+      "enabled": true,
+      "tags": ["coworking", "startup", "social-impact"],
+      "priority": 85
+    },
+    {
+      "id": "generic-surf-incubator",
+      "name": "SURF Incubator Events",
+      "type": "generic",
+      "url": "https://surfincubator.com/events",
+      "enabled": true,
+      "tags": ["startup", "incubator", "entrepreneurship"],
+      "priority": 86
+    },
+    {
+      "id": "generic-create33",
+      "name": "Create33 Events",
+      "type": "generic",
+      "url": "https://create33.com/events",
+      "enabled": true,
+      "tags": ["startup", "coworking", "networking"],
+      "priority": 87
+    },
+    {
+      "id": "generic-collective",
+      "name": "The Collective Events",
+      "type": "generic",
+      "url": "https://www.collectiveseattle.com/events",
+      "enabled": true,
+      "tags": ["coworking", "networking"],
+      "priority": 88
+    },
+    {
+      "id": "generic-cloud-room",
+      "name": "The Cloud Room Events",
+      "type": "generic",
+      "url": "https://www.thecloudroomseattle.com/events",
+      "enabled": true,
+      "tags": ["coworking", "networking"],
+      "priority": 89
+    },
+    {
+      "id": "generic-galvanize",
+      "name": "Galvanize Seattle Events",
+      "type": "generic",
+      "url": "https://www.galvanize.com/events?campus=seattle",
+      "enabled": true,
+      "tags": ["education", "bootcamp", "coworking"],
+      "priority": 90
+    },
+    {
+      "id": "generic-riveter",
+      "name": "The Riveter Events",
+      "type": "generic",
+      "url": "https://www.theriveter.co/events",
+      "enabled": true,
+      "tags": ["women-in-tech", "coworking", "networking"],
+      "priority": 91
+    },
+    {
+      "id": "generic-fledge",
+      "name": "Fledge Events",
+      "type": "generic",
+      "url": "https://fledge.co/events",
+      "enabled": true,
+      "tags": ["startup", "accelerator", "social-impact"],
+      "priority": 92
+    },
+    {
+      "id": "generic-techstars",
+      "name": "Techstars Seattle Events",
+      "type": "generic",
+      "url": "https://www.techstars.com/events/location/united-states/seattle",
+      "enabled": true,
+      "tags": ["startup", "accelerator", "entrepreneurship"],
+      "priority": 93
+    },
+    {
+      "id": "generic-9mile",
+      "name": "9Mile Labs Events",
+      "type": "generic",
+      "url": "http://9milelabs.com/events",
+      "enabled": true,
+      "tags": ["startup", "accelerator", "b2b"],
+      "priority": 94
+    },
+    {
+      "id": "generic-founder-institute",
+      "name": "Founder Institute Seattle Events",
+      "type": "generic",
+      "url": "https://fi.co/events/seattle",
+      "enabled": true,
+      "tags": ["startup", "accelerator", "entrepreneurship"],
+      "priority": 95
+    },
+    {
+      "id": "generic-startup-weekend",
+      "name": "Startup Weekend Seattle",
+      "type": "generic",
+      "url": "https://communities.techstars.com/usa/seattle/startup-weekend",
+      "enabled": true,
+      "tags": ["startup", "hackathon", "entrepreneurship"],
+      "priority": 96
+    },
+    {
+      "id": "generic-startup-week",
+      "name": "Seattle Startup Week",
+      "type": "generic",
+      "url": "https://techstarscommunityprograms.com/seattle-startup-week",
+      "enabled": true,
+      "tags": ["startup", "conference", "networking"],
+      "priority": 97
+    },
+    {
+      "id": "generic-bsides",
+      "name": "BSides Seattle",
+      "type": "generic",
+      "url": "https://bsidesseattle.com/",
+      "enabled": true,
+      "tags": ["security", "conference", "infosec"],
+      "priority": 98
+    },
+    {
+      "id": "generic-devopsdays",
+      "name": "DevOpsDays Seattle",
+      "type": "generic",
+      "url": "https://devopsdays.org/events/2026-seattle/",
+      "enabled": true,
+      "tags": ["devops", "conference"],
+      "priority": 99
+    },
+    {
+      "id": "generic-cascadiajs",
+      "name": "CascadiaJS Conference",
+      "type": "generic",
+      "url": "https://cascadiajs.com/",
+      "enabled": true,
+      "tags": ["javascript", "conference", "web"],
+      "priority": 100
+    },
+    {
+      "id": "generic-seagl",
+      "name": "SeaGL (Seattle GNU/Linux Conference)",
+      "type": "generic",
+      "url": "https://seagl.org/",
+      "enabled": true,
+      "tags": ["linux", "opensource", "conference"],
+      "priority": 101
+    },
+    {
+      "id": "generic-dubhacks",
+      "name": "DubHacks (UW Hackathon)",
+      "type": "generic",
+      "url": "https://dubhacks.co/",
+      "enabled": true,
+      "tags": ["hackathon", "university", "student"],
+      "priority": 102
+    },
+    {
+      "id": "generic-wids",
+      "name": "WiDS Seattle (Women in Data Science)",
+      "type": "generic",
+      "url": "https://www.widsconference.org/seattle",
+      "enabled": true,
+      "tags": ["data", "women-in-tech", "conference"],
+      "priority": 103
     },
     {
       "id": "eventbrite-geekwire",
@@ -345,7 +885,7 @@
       "url": "https://www.eventbrite.com/o/geekwire-8181498695",
       "enabled": true,
       "tags": ["tech", "startup", "conference"],
-      "priority": 50
+      "priority": 110
     },
     {
       "id": "eventbrite-startup-seattle",
@@ -354,7 +894,7 @@
       "url": "https://www.eventbrite.com/o/startup-seattle-7089047717",
       "enabled": true,
       "tags": ["startup", "networking", "entrepreneurship"],
-      "priority": 51
+      "priority": 111
     },
     {
       "id": "tentimes-seattle-tech",
@@ -363,7 +903,7 @@
       "url": "https://10times.com/seattle-us/technology",
       "enabled": true,
       "tags": ["conference", "tech", "expo"],
-      "priority": 60
+      "priority": 120
     }
   ]
 }
